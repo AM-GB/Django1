@@ -1,0 +1,7 @@
+1) в Django 2.2
+2) django-admin --version версия
+3) pip3 install django==2.2
+4) readme utf-8
+5) установить piloy
+6) написать в support попросит ключь на про версию pch
+7) django geekbrains имя суперпользователя и пароль
