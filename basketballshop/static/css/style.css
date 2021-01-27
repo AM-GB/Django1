@@ -16,7 +16,7 @@ html, body {
 	height: 384px;
 }
 
-.container {
+.box {
 	width: 1366px;
 	margin: 0 auto;
 	min-height: 100%;
