@@ -24,7 +24,7 @@
 		<div class="details-products">
 			<div class="details-slider">
 				<div class="slider-product">
-					<img src="{% static '/img/slider1.jpg' %}">
+					<img src="/media/{{ product_1.image }}">
 				</div>
 				<div class="slider-control">
 					<div class="block">
@@ -43,15 +43,18 @@
 			<div class="description">
 				<h3 class="big-bold">Отличные кроссовки</h3>
 				<h3 class="red">горячее предложение</h3>
-				<p class="price"> 5800 <span>руб</span></p>
+				<p class="price"> {{product_1.price}} <span>руб</span></p>
 				<a href="#" class="red-button">
 					заказать <i class="fa fa-chevron-right" aria-hidden="true"></i>
 				</a>
 				<div class="description-text">
-					<p>Подошва из пеноматериала.</p>
+					{% for item in description %}
+						<p>{{ item.description }}</p>
+					{% endfor %}
+					{% comment %} <p>Подошва из пеноматериала.</p>
 					<p>Верх из гладкой и прочной синтетической кожи.</p>
 					<p>Различные цвета</p>
-					<p>Мягкий бортик для удобной посадки.</p>
+					<p>Мягкий бортик для удобной посадки.</p> {% endcomment %}
 				</div>
 			</div>
 		</div>
