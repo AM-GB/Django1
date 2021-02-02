@@ -13,11 +13,11 @@ def index(request):
 
 
 def products(request):
-    category = ProductCategory.objects.all()
-    menu = [{'category': 'все', }]
+    menu = ProductCategory.objects.all()
+    # menu = [{'category': 'все', }]
 
-    for item in category:
-        menu.append({'category': item.name})
+    # for item in category:
+    #     menu.append({'category': item.name})
 
     # menu = [
     #     {'category': 'все', },
@@ -41,6 +41,10 @@ def products(request):
     }
 
     return render(request, 'mainapp/products.html', context)
+
+
+def category(request, pk):
+    print(pk)
 
 
 def contact(request):
