@@ -10,21 +10,26 @@
 	<div class="details">
 		<div class="links clearfix">
 			<ul class="links-menu">
+				<li>
+					<a href="{% url 'base:category' 0 %}"
+					class="active">
+						все
+					</a>
+				</li>
 			{% for item in menu %}
-				<li><a href="#">{{ item.category }}</a></li>
+				<li><a href="{% url 'base:category' item.pk %}"
+                   	class="active">
+				   		{{ item.name }}
+					</a>
+				</li>
 			{% endfor %}
-				{% comment %} <li><a href="#" class="active">все</a></li>
-				<li><a href="#">кроссовки</a></li>
-				<li><a href="#">форма</a></li>
-				<li><a href="#">мячи</a></li>
-				<li><a href="#">аксессуары</a></li> {% endcomment %}
 			</ul>
 		</div>
 
 		<div class="details-products">
 			<div class="details-slider">
 				<div class="slider-product">
-					<img src="{% static '/img/slider1.jpg' %}">
+					<img src="/media/{{ product_1.image }}">
 				</div>
 				<div class="slider-control">
 					<div class="block">
@@ -43,15 +48,14 @@
 			<div class="description">
 				<h3 class="big-bold">Отличные кроссовки</h3>
 				<h3 class="red">горячее предложение</h3>
-				<p class="price"> 5800 <span>руб</span></p>
+				<p class="price"> {{product_1.price}} <span>руб</span></p>
 				<a href="#" class="red-button">
 					заказать <i class="fa fa-chevron-right" aria-hidden="true"></i>
 				</a>
 				<div class="description-text">
-					<p>Подошва из пеноматериала.</p>
-					<p>Верх из гладкой и прочной синтетической кожи.</p>
-					<p>Различные цвета</p>
-					<p>Мягкий бортик для удобной посадки.</p>
+					{% for item in description %}
+						<p>{{ item.description }}</p>
+					{% endfor %}
 				</div>
 			</div>
 		</div>
