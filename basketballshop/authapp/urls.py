@@ -7,4 +7,6 @@ app_name = 'authapp'
 urlpatterns = [
     path('login/', authapp.login, name='login'),
     path('logout/', authapp.logout, name='logout'),
+    path('user/register/', authapp.register, name='register'),
+    path('user/edit/', authapp.edit, name='edit'),
 ]
