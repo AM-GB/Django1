@@ -10,4 +10,5 @@ urlpatterns = [
     path('contact/', mainapp.contact, name='contact'),
 
     path('category/<int:pk>/', mainapp.category, name='category'),
+    path('product/<int:pk>/', mainapp.product_page, name='product_page'),
 ]

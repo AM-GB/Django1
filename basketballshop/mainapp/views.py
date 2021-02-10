@@ -1,3 +1,5 @@
+import random
+
 from django.shortcuts import render, get_object_or_404
 
 from mainapp.models import ProductCategory, Product
@@ -5,6 +7,17 @@ from mainapp.models import ProductCategory, Product
 
 def get_menu():
     return ProductCategory.objects.all()
+
+
+def get_hot_product():
+    product_ids = Product.objects.values_list('id', flat=True).all()
+    random_id = random.choice(product_ids)
+    return Product.objects.get(pk=random_id)
+
+
+def same_products(hot_product):
+    return Product.objects.filter(category=hot_product.category). \
+               exclude(pk=hot_product.pk)[:3]
 
 
 def index(request):
@@ -15,21 +28,7 @@ def index(request):
 
 
 def products(request):
-    # menu = ProductCategory.objects.all()
-    # menu = [{'category': 'все', }]
-
-    # for item in category:
-    #     menu.append({'category': item.name})
-
-    # menu = [
-    #     {'category': 'все', },
-    #     {'category': 'кросовки', },
-    #     {'category': 'форма', },
-    #     {'category': 'мятчи', },
-    #     {'category': 'аксессуары', },
-    # ]
-
-    product_1 = Product.objects.all()[0]
+    product_1 = get_hot_product()
     description_product_1 = []
 
     for descript in product_1.description.split('|'):
@@ -40,6 +39,7 @@ def products(request):
         'menu': get_menu(),
         'product_1': product_1,
         'description': description_product_1,
+        'same_products': same_products(product_1),
     }
 
     return render(request, 'mainapp/products.html', context)
@@ -60,6 +60,21 @@ def category(request, pk):
         'products': products,
     }
     return render(request, 'mainapp/category_products.html', context)
+
+
+def product_page(request, pk):
+    description_product_1 = []
+    for descript in get_hot_product().description.split('|'):
+        description_product_1.append({'description': descript, })
+
+    product = get_object_or_404(Product, pk=pk)
+    context = {
+        'page_title': 'страница продукта',
+        'product': product,
+        'description': description_product_1,
+        'menu': get_menu(),
+    }
+    return render(request, 'mainapp/product_page.html', context)
 
 
 def contact(request):
