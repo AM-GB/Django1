@@ -20,6 +20,13 @@
                 </a>
             {% endif %}
         </li>
+        {% if user.is_superuser %}
+            <li>
+                <a href="{% url 'new_admin:index' %}">
+                    Админка
+                </a>
+            </li>
+        {% endif %}
         <li>
             {% if user.is_authenticated %}
                 <a href="{% url 'auth:logout' %}">
