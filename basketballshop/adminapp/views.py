@@ -44,6 +44,9 @@ def user_delete(request, user_pk):
         if user.is_active:
             user.is_active = False
             user.save()
+        else:
+            user.is_active = True
+            user.save()
         return HttpResponseRedirect(reverse('new_admin:index'))
     context = {
         'page_title': 'админка/пользователи/удаление',

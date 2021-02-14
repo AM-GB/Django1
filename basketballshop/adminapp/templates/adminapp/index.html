@@ -20,10 +20,17 @@
                        class="btn btn-primary">
                         редактировать
                     </a>
+                    {% if shop_user.is_active %}
                     <a href="{% url 'new_admin:user_delete' shop_user.pk %}"
                        class="btn btn-danger">
                         удалить
                     </a>
+                    {% else %}
+                    <a href="{% url 'new_admin:user_delete' shop_user.pk %}"
+                       class="btn btn-danger">
+                        восстановить
+                    </a>
+                    {% endif %}
                 </div>
                 <div class="user_name">
                     <p><strong>{{ shop_user.username }}</strong></p>
