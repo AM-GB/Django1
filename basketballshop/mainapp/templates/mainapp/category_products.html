@@ -12,6 +12,19 @@
         <div class="related">
             <div class="title clearfix">
                 <h2>Продукты категории {{ category.name|upper }}</h2>
+                <div class="paginator">
+                    {% if products.has_previous %}
+                        <a href="{% url 'base:category' category.pk %}?page={{ products.previous_page_number }}">
+                            <
+                        </a>
+                    {% endif %}
+                    <span class="current">страница {{ products.number }} из {{ products.paginator.num_pages }}</span>
+                    {% if products.has_next %}
+                        <a href="{% url 'base:category' category.pk %}?page={{ products.next_page_number }}">
+                            >
+                        </a>
+                    {% endif %}
+                </div>
             </div>
             <div class="related-products clearfix">
                 {% for item in products %}

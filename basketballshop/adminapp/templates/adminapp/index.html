@@ -1,5 +1,6 @@
 {% extends 'adminapp/base.html' %}
 {% load static %}
+{% load my_tags %}
 
 {% block container %}
     <div class="users_list">
@@ -8,7 +9,7 @@
         </a>
         {% for shop_user in all_users %}
             <div class="user_record {% if not shop_user.is_active %}not_active{% endif %}">
-                <img src="/media/{{ shop_user.avatar|default:"avatars/default.jpg" }}"
+                <img src="{{ shop_user.avatar|media_folder_users }}"
                      alt="{{ shop_user.username }}">
                 <div class="user_role">
                     {% if shop_user.is_superuser %}
@@ -20,17 +21,10 @@
                        class="btn btn-primary">
                         редактировать
                     </a>
-                    {% if shop_user.is_active %}
                     <a href="{% url 'new_admin:user_delete' shop_user.pk %}"
                        class="btn btn-danger">
                         удалить
                     </a>
-                    {% else %}
-                    <a href="{% url 'new_admin:user_delete' shop_user.pk %}"
-                       class="btn btn-danger">
-                        восстановить
-                    </a>
-                    {% endif %}
                 </div>
                 <div class="user_name">
                     <p><strong>{{ shop_user.username }}</strong></p>
