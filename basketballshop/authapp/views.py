@@ -8,10 +8,16 @@ from authapp.forms import ShopUserLoginForm, ShopUserCreationForm, ShopUserChang
 
 def login(request):
     redirect_to = request.GET.get('next', '')
+    print('---------------------------------')
+    print(request.method)
+    print('---------------------------------')
 
     if request.method == 'POST':
         form = ShopUserLoginForm(data=request.POST)
         if form.is_valid():
+            print('---------------------------------')
+            print(request.POST)
+            print('---------------------------------')
             username = request.POST.get('username')
             password = request.POST.get('password')
             redirect_to = request.POST.get('redirect-to')

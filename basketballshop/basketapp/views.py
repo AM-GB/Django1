@@ -8,7 +8,7 @@ from basketapp.models import BasketItem
 from basketballshop.settings import LOGIN_URL
 
 
-@login_required
+@login_required  # проверка аунтификации, если нет то забрасывает LOGIN_URL
 def index(request):
     basket = request.user.basket.all()
     context = {

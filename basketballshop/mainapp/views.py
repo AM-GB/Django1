@@ -26,6 +26,7 @@ def same_products(hot_product):
 
 
 def index(request):
+    print(request.headers)
     context = {
         'page_title': 'главная',
     }
@@ -101,7 +102,7 @@ def contact(request):
          'phone': '+7-918-123-1235',
          'email': 'infoKz@basketballshop',
          'address': 'Парк Галицкого', },
-        {'city': 'Свнкт-петербург',
+        {'city': 'Санкт-петербург',
          'phone': '+7-918-123-1233',
          'email': 'infoS@basketballshop',
          'address': 'Эрмитаж', },
