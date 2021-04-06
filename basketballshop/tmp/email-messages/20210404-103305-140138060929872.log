@@ -1,0 +1,14 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Subject: 
+ =?utf-8?b?0J/QvtC00YLQstC10YDQttC00LXQvdC40LUg0YPRh9C10YLQvdC+0Lkg0LfQsNC/?=
+ =?utf-8?b?0LjRgdC4IHVzZXI2?=
+From: django@basketballshop.local
+To: user4@mail.ru
+Date: Sun, 04 Apr 2021 10:33:05 -0000
+Message-ID: <161753238556.9071.12549044160655112627@AM007>
+
+Для подтверждения учетной записи user6 на портале http://localhost:8000 перейдите по ссылке: 
+http://localhost:8000/auth/user/verify/user4@mail.ru/a7a24fabdf02976502087a34aaab7b6f417760f4/
+-------------------------------------------------------------------------------
