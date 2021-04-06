@@ -1,13 +1,24 @@
+import random
+
+from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 from django.shortcuts import render, get_object_or_404
 
 from mainapp.models import ProductCategory, Product
 
 
-def get_menu():
-    return ProductCategory.objects.all()
+def get_hot_product():
+    product_ids = Product.objects.values_list('id', flat=True).all()
+    random_id = random.choice(product_ids)
+    return Product.objects.get(pk=random_id)
+
+
+def same_products(hot_product):
+    return Product.objects.filter(category=hot_product.category). \
+        exclude(pk=hot_product.pk)[:3]
 
 
 def index(request):
+    print(request.headers)
     context = {
         'page_title': 'главная',
     }
@@ -15,21 +26,7 @@ def index(request):
 
 
 def products(request):
-    # menu = ProductCategory.objects.all()
-    # menu = [{'category': 'все', }]
-
-    # for item in category:
-    #     menu.append({'category': item.name})
-
-    # menu = [
-    #     {'category': 'все', },
-    #     {'category': 'кросовки', },
-    #     {'category': 'форма', },
-    #     {'category': 'мятчи', },
-    #     {'category': 'аксессуары', },
-    # ]
-
-    product_1 = Product.objects.all()[0]
+    product_1 = get_hot_product()
     description_product_1 = []
 
     for descript in product_1.description.split('|'):
@@ -37,15 +34,16 @@ def products(request):
 
     context = {
         'page_title': 'продукты',
-        'menu': get_menu(),
         'product_1': product_1,
         'description': description_product_1,
+        'same_products': same_products(product_1),
     }
 
     return render(request, 'mainapp/products.html', context)
 
 
 def category(request, pk):
+    page_num = request.GET.get('page', 1)
     if pk == 0:
         category = {'pk': 0, 'name': 'все'}
         products = Product.objects.all()
@@ -53,13 +51,34 @@ def category(request, pk):
         category = get_object_or_404(ProductCategory, pk=pk)
         products = category.product_set.all()
 
+    products_paginator = Paginator(products, 2)
+    try:
+        products = products_paginator.page(page_num)
+    except PageNotAnInteger:
+        products = products_paginator.page(1)
+    except EmptyPage:
+        products = products_paginator.page(products_paginator.num_pages)
+
     context = {
         'page_title': 'товары категории',
-        'menu': get_menu(),
         'category': category,
         'products': products,
     }
     return render(request, 'mainapp/category_products.html', context)
+
+
+def product_page(request, pk):
+    description_product_1 = []
+    for descript in get_hot_product().description.split('|'):
+        description_product_1.append({'description': descript, })
+
+    product = get_object_or_404(Product, pk=pk)
+    context = {
+        'page_title': 'страница продукта',
+        'product': product,
+        'description': description_product_1,
+    }
+    return render(request, 'mainapp/product_page.html', context)
 
 
 def contact(request):
@@ -72,7 +91,7 @@ def contact(request):
          'phone': '+7-918-123-1235',
          'email': 'infoKz@basketballshop',
          'address': 'Парк Галицкого', },
-        {'city': 'Свнкт-петербург',
+        {'city': 'Санкт-петербург',
          'phone': '+7-918-123-1233',
          'email': 'infoS@basketballshop',
          'address': 'Эрмитаж', },

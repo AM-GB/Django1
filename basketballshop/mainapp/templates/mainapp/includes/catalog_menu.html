@@ -2,7 +2,7 @@
     <ul class="links-menu">
         <li>
             <a href="{% url 'base:category' 0 %}"
-               class="active">
+               class="{% if request.resolver_match.url_name == 'category' and request.resolver_match.kwargs.pk == 0 %}active{% endif %}">
                 все
             </a>
         </li>
@@ -10,7 +10,7 @@
         {% for item in menu %}
             <li>
                 <a href="{% url 'base:category' item.pk %}"
-                   class="active">
+                   class="{% if request.resolver_match.url_name == 'category' and request.resolver_match.kwargs.pk == item.pk %}active{% endif %}">
                     {{ item.name }}
                 </a>
             </li>
