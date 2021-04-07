@@ -1,10 +1,13 @@
 from django.contrib import auth
 from django.contrib.auth import get_user_model
+from django.db.models.signals import post_save
+from django.dispatch import receiver
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse
 
-from authapp.forms import ShopUserLoginForm, ShopUserCreationForm, ShopUserChangeForm
+from authapp.forms import ShopUserLoginForm, ShopUserCreationForm, ShopUserChangeForm, ShopUserProfileChangeForm
+from authapp.models import ShopUser, ShopUserProfile
 
 
 def login(request):
@@ -61,15 +64,20 @@ def edit(request):
     if request.method == 'POST':
         form = ShopUserChangeForm(
             request.POST, request.FILES, instance=request.user)
-        if form.is_valid():
+        profile_form = ShopUserProfileChangeForm(request.POST, request.FILES,
+                                                 instance=request.user.shopuserprofile)
+        if form.is_valid() and profile_form.is_valid():
             form.save()
             return HttpResponseRedirect(reverse('base:index'))
     else:
         form = ShopUserChangeForm(instance=request.user)
+        profile_form = ShopUserProfileChangeForm(
+            instance=request.user.shopuserprofile)
 
     context = {
         'page_title': 'редактирование',
         'form': form,
+        'profile_form': profile_form,
     }
     return render(request, 'authapp/update.html', context)
 
@@ -79,5 +87,17 @@ def verify(request, email, activate_code):
     if user.activate_code == activate_code and not user.is_activation_key_expired:
         user.is_active = True
         user.save()
-        auth.login(request, user)
+        auth.login(request, user,
+                   backend='django.contrib.auth.backends.ModelBackend')
     return render(request, 'authapp/verification.html')
+
+
+@receiver(post_save, sender=ShopUser)
+def create_user_profile(sender, instance, created, **kwargs):
+    if created:
+        ShopUserProfile.objects.create(user=instance)
+
+
+@receiver(post_save, sender=ShopUser)
+def save_user_profile(sender, instance, **kwargs):
+    instance.shopuserprofile.save()
