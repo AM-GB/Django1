@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>
         {% block title %}
-            {{ page_title|capfirst }}
+            {{ page_title|title }}
         {% endblock %}
     </title>
     {% block css %}
@@ -16,19 +16,13 @@
     {% block js %}
         <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
         <script src="{% static 'js/bootstrap.min.js' %}"></script>
-        <script src="{% static 'js/basket_scripts.js' %}"></script>
     {% endblock %}
 </head>
 <body>
-<div class="basket_container">
-    <div class="h2 text-center head">
-        Ваша корзина,
-        {{ user.first_name|default:"пользователь"|capfirst }}
-    </div>
-
+<div class="order_container">
     {% block container %}
-    {% endblock %}
 
+    {% endblock %}
 </div>
 </body>
 </html>
