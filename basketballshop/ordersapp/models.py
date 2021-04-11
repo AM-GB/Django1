@@ -32,6 +32,10 @@ class Order(models.Model):
     def is_forming(self):
         return self.status == self.STATUS_FORMING
 
+    def complete(self):
+        self.status = self.STATUS_SENDED
+        self.save()
+
     @property
     def total_quantity(self):
         return sum(map(lambda x: x.qty, self.items.all()))
@@ -40,11 +44,7 @@ class Order(models.Model):
     def total_cost(self):
         return sum(map(lambda x: x.product_cost, self.items.all()))
 
-    # переопределяем метод, удаляющий объект
     def delete(self, using=None, keep_parents=False):
-        # for item in self.orderitems.all():
-        #     item.product.quantity += item.quantity
-        #     item.product.save()
         self.is_active = False
         self.save()
 

@@ -1,8 +1,9 @@
 from django.db import transaction
 from django.forms import inlineformset_factory
-from django.urls import reverse_lazy
+from django.http import HttpResponseRedirect
+from django.urls import reverse_lazy, reverse
 from django.views.generic import CreateView, ListView, UpdateView
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 
 from ordersapp.forms import OrderForm, OrderItemForm
 from ordersapp.models import Order, OrderItem
@@ -10,6 +11,11 @@ from ordersapp.models import Order, OrderItem
 
 class OrderList(ListView):
     model = Order
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['page_title'] = 'Заказы'
+        return context
 
     def get_queryset(self):
         return self.request.user.orders.all()
@@ -22,6 +28,7 @@ class OrderCreate(CreateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+        context['page_title'] = 'Новый заказ'
 
         OrderFormSet = inlineformset_factory(Order, OrderItem,
                                              form=OrderItemForm, extra=3)
@@ -40,7 +47,6 @@ class OrderCreate(CreateView):
                 for form, basket_item in zip(formset.forms, basket_items):
                     form.initial['product'] = basket_item.product
                     form.initial['qty'] = basket_item.qty
-                # basket_items.delete()
             else:
                 formset = OrderFormSet()
 
@@ -54,11 +60,10 @@ class OrderCreate(CreateView):
         with transaction.atomic():
             order = super().form_valid(form)
             if orderitems.is_valid():
-                orderitems.instance = self.object  # one to many
+                orderitems.instance = self.object
                 orderitems.save()
                 self.request.user.basket.all().delete()
 
-        # удаляем пустой заказ
         if self.object.total_cost == 0:
             self.object.delete()
 
@@ -72,6 +77,7 @@ class OrderUpdate(UpdateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+        context['page_title'] = 'Редактор заказа'
         OrderFormSet = inlineformset_factory(
             Order, OrderItem, form=OrderItemForm, extra=1
         )
@@ -95,8 +101,14 @@ class OrderUpdate(UpdateView):
             if orderitems.is_valid():
                 orderitems.save()
 
-        # удаляем пустой заказ
         if self.object.total_cost == 0:
             self.object.delete()
 
         return order
+
+
+def forming_complete(request, pk):
+    order = get_object_or_404(Order, pk=pk)
+    order.complete()
+    print(order.status)
+    return HttpResponseRedirect(reverse('orders:index',))
