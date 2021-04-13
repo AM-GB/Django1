@@ -20,6 +20,8 @@ class OrderForm(BaseOrderForm):
 
 
 class OrderItemForm(BaseOrderForm):
+    price = forms.FloatField(required=False)
+
     class Meta:
         model = OrderItem
         fields = '__all__'

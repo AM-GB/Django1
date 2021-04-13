@@ -45,6 +45,9 @@ class Order(models.Model):
         return sum(map(lambda x: x.product_cost, self.items.all()))
 
     def delete(self, using=None, keep_parents=False):
+        for item in self.items.all():
+            item.product.quantity += item.qty
+            item.product.save()
         self.is_active = False
         self.save()
 
@@ -52,6 +55,11 @@ class Order(models.Model):
         ordering = ('-add_dt',)
         verbose_name = 'заказ'
         verbose_name_plural = 'заказы'
+
+
+class OrderItemManager(models.QuerySet):
+    def delete(self):
+        print('OrderItem QS delete')
 
 
 class OrderItem(models.Model):
@@ -66,3 +74,7 @@ class OrderItem(models.Model):
     @property
     def product_cost(self):
         return self.product.price * self.qty
+
+    @classmethod
+    def get_item(cls, pk):
+        return cls.objects.filter(pk=pk).first()

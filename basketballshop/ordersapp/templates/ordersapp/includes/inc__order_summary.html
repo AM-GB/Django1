@@ -2,7 +2,7 @@
     <div class="h2">Заказ №{{ object.pk }} от {{ object.created|date:"Y-m-d H:i:s" }}</div>
     <hr>
     <div class="h4">заказчик: {{ user.last_name }} {{ user.first_name }} </div>
-    <div class="h4">обновлен: {{ object.updated|date:"Y-m-d H:i:s" }}</div>
+    <div class="h4">обновлен: {{ object.update_dt|date:"Y-m-d H:i:s" }}</div>
     <div class="h4">cтатус: {{ object.get_status_display }}</div>
     <hr>
     <div class="h4">
