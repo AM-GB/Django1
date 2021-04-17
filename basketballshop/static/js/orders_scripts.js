@@ -97,4 +97,39 @@ window.onload = function () {
         prefix: 'items',
         removed: deleteOrderItem
     });
+
+    $orderForm.on('change', 'select', function (event) {
+        let target = event.target;
+        let orderItemNum = parseInt(
+            target.name.replace('items-', '').replace('-product', '')
+        );
+        let orderItemProductPk = target.options[target.selectedIndex].value;
+
+        // console.log(orderItemNum, orderItemProductPk);
+        if (orderItemProductPk) {
+            $.ajax({
+                url: "/product/" + orderItemProductPk + "/price/",
+                success: function (data) {
+                    if (data.price) {
+                        priceArr[orderItemNum] = parseFloat(data.price);
+                        if (isNaN(quantityArr[orderItemNum])) {
+                            quantityArr[orderItemNum] = 0;
+                        }
+                        let priceHtml = '<span>' +
+                            data.price.toString().replace('.', ',') +
+                            '</span> руб';
+                        let currentTR = $('.order_form table').find('tr:eq(' + (orderItemNum + 1) + ')');
+                        currentTR.find('td:eq(2)').html(priceHtml);
+                        let $productQuantity = currentTR.find('input[type="number"]');
+                        // console.log($productQuantity.val(), isNaN($productQuantity.val()));
+                        if (!$productQuantity.val() || isNaN($productQuantity.val())) {
+                            $productQuantity.val(0);
+                        }
+                        orderSummaryUpdate(quantityArr[orderItemNum],
+                            parseInt($productQuantity.val()));
+                    }
+                },
+            });
+        }
+    });
 }

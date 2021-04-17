@@ -1,19 +1,21 @@
 import random
 
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
+from django.http import JsonResponse
 from django.shortcuts import render, get_object_or_404
 
 from mainapp.models import ProductCategory, Product
 
 
 def get_hot_product():
-    product_ids = Product.objects.values_list('id', flat=True).all()
+    product_ids = Product.get_items(). \
+        values_list('id', flat=True)
     random_id = random.choice(product_ids)
     return Product.objects.get(pk=random_id)
 
 
 def same_products(hot_product):
-    return Product.objects.filter(category=hot_product.category). \
+    return Product.get_items().filter(category=hot_product.category). \
         exclude(pk=hot_product.pk)[:3]
 
 
@@ -46,10 +48,10 @@ def category(request, pk):
     page_num = request.GET.get('page', 1)
     if pk == 0:
         category = {'pk': 0, 'name': 'все'}
-        products = Product.objects.all()
+        products = Product.get_items()
     else:
         category = get_object_or_404(ProductCategory, pk=pk)
-        products = category.product_set.all()
+        products = category.product_set.filter(is_active=True)
 
     products_paginator = Paginator(products, 2)
     try:
@@ -101,3 +103,11 @@ def contact(request):
         'contacts': contacts,
     }
     return render(request, 'mainapp/contact.html', context)
+
+
+def get_product_price(request, pk):
+    if request.is_ajax():
+        product = Product.objects.filter(pk=pk).first()
+        return JsonResponse(
+            {'price': product and product.price or 0}
+        )
