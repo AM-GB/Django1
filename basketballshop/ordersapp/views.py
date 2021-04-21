@@ -1,9 +1,11 @@
+from django.contrib.auth.decorators import user_passes_test
 from django.db import transaction
 from django.db.models.signals import pre_save, pre_delete
 from django.dispatch import receiver
 from django.forms import inlineformset_factory
 from django.http import HttpResponseRedirect
 from django.urls import reverse_lazy, reverse
+from django.utils.decorators import method_decorator
 from django.views.generic import CreateView, ListView, UpdateView, DetailView, DeleteView
 from django.shortcuts import render, get_object_or_404
 
@@ -11,7 +13,13 @@ from ordersapp.forms import OrderForm, OrderItemForm
 from ordersapp.models import Order, OrderItem
 
 
-class OrderList(ListView):
+class LoggedUserOnlyMixin:
+    @method_decorator(user_passes_test(lambda user: user.is_authenticated))
+    def dispatch(self, request, *args, **kwargs):
+        return super().dispatch(request, *args, **kwargs)
+
+
+class OrderList(LoggedUserOnlyMixin, ListView):
     model = Order
 
     def get_context_data(self, **kwargs):
@@ -23,7 +31,7 @@ class OrderList(ListView):
         return self.request.user.orders.all()
 
 
-class OrderCreate(CreateView):
+class OrderCreate(LoggedUserOnlyMixin, CreateView):
     model = Order
     form_class = OrderForm
     success_url = reverse_lazy('orders:index')
@@ -72,7 +80,7 @@ class OrderCreate(CreateView):
         return order
 
 
-class OrderUpdate(UpdateView):
+class OrderUpdate(LoggedUserOnlyMixin, UpdateView):
     model = Order
     form_class = OrderForm
     success_url = reverse_lazy('orders:index')
@@ -120,11 +128,11 @@ def forming_complete(request, pk):
     return HttpResponseRedirect(reverse('orders:index',))
 
 
-class OrderDetail(DetailView):
+class OrderDetail(LoggedUserOnlyMixin, DetailView):
     model = Order
 
 
-class OrderDelete(DeleteView):
+class OrderDelete(LoggedUserOnlyMixin, DeleteView):
     model = Order
     success_url = reverse_lazy('orders:index')
 

@@ -6,6 +6,7 @@ from django.contrib.auth.models import AbstractUser
 from django.core.mail import send_mail
 from django.db import models
 from django.urls import reverse
+from django.utils.functional import cached_property
 from django.utils.timezone import now
 
 from basketballshop.settings import DOMAIN_NAME, EMAIL_HOST_USER, ACTIVATION_KEY_TTL
@@ -18,11 +19,16 @@ class ShopUser(AbstractUser):
     registration_start_time = models.DateTimeField(
         auto_now_add=True, null=True)
 
+    @cached_property
+    def basket_items(self):
+        # return self.basket.all()
+        return self.basket.select_related('product').all()
+
     def basket_price(self):
-        return sum(el.product_cost for el in self.basket.all())
+        return sum(el.product_cost for el in self.basket_items)
 
     def basket_qty(self):
-        return sum(el.qty for el in self.basket.all())
+        return sum(el.qty for el in self.basket_items)
 
     @property
     def is_activation_key_expired(self):

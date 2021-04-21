@@ -1,5 +1,6 @@
 from django.contrib.auth import get_user_model
 from django.db import models
+from django.utils.functional import cached_property
 
 from mainapp.models import Product
 
@@ -28,6 +29,10 @@ class Order(models.Model):
     is_active = models.BooleanField(verbose_name='активен',
                                     default=True)
 
+    @cached_property
+    def order_items(self):
+        return self.items.select_related('product').all()
+
     @property
     def is_forming(self):
         return self.status == self.STATUS_FORMING
@@ -38,11 +43,11 @@ class Order(models.Model):
 
     @property
     def total_quantity(self):
-        return sum(map(lambda x: x.qty, self.items.all()))
+        return sum(map(lambda x: x.qty, self.order_items))
 
     @property
     def total_cost(self):
-        return sum(map(lambda x: x.product_cost, self.items.all()))
+        return sum(map(lambda x: x.product_cost, self.order_items))
 
     def delete(self, using=None, keep_parents=False):
         for item in self.items.all():

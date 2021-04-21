@@ -1,0 +1,14 @@
+http://188.227.58.126/
+http://188.227.58.126/products/
+http://188.227.58.126/contact/
+http://188.227.58.126/category/1/
+http://188.227.58.126/category/2/
+http://188.227.58.126/category/3/
+http://188.227.58.126/category/4/
+http://188.227.58.126/basket/
+http://188.227.58.126/orders/
+http://188.227.58.126/auth/user/edit/
+http://188.227.58.126/orders/update/4/
+http://188.227.58.126/orders/update/3/
+http://188.227.58.126/orders/update/2/
+http://188.227.58.126/orders/update/1/
