@@ -1,14 +1,39 @@
 import random
 
+from django.core.cache import cache
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 from django.http import JsonResponse
 from django.shortcuts import render, get_object_or_404
+from django.views.decorators.cache import never_cache
 
+from basketballshop import settings
 from mainapp.models import ProductCategory, Product
 
 
+def get_products():
+    if settings.LOW_CACHE:
+        key = 'all_products'
+        products = cache.get(key)
+        if products is None:
+            products = Product.get_items()
+            cache.set(key, products)
+        return products
+    return Product.get_items()
+
+
+def get_products_by_category(pk):
+    if settings.LOW_CACHE:
+        key = f'category_{pk}_products'
+        products = cache.get(key)
+        if products is None:
+            products = Product.get_items().filter(category_id=pk)
+            cache.set(key, products)
+        return products
+    return Product.get_items().filter(category_id=pk)
+
+
 def get_hot_product():
-    product_ids = Product.get_items(). \
+    product_ids = get_products(). \
         values_list('id', flat=True)
     random_id = random.choice(product_ids)
     return Product.objects.get(pk=random_id)
@@ -48,10 +73,10 @@ def category(request, pk):
     page_num = request.GET.get('page', 1)
     if pk == 0:
         category = {'pk': 0, 'name': 'все'}
-        products = Product.get_items()
+        products = get_products()
     else:
         category = get_object_or_404(ProductCategory, pk=pk)
-        products = category.product_set.filter(is_active=True)
+        products = get_products_by_category(pk)
 
     products_paginator = Paginator(products, 2)
     try:
