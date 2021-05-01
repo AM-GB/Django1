@@ -1,4 +1,6 @@
 from django.contrib.auth.decorators import login_required
+from django.db import connection
+from django.db.models import F
 from django.http import HttpResponseRedirect, JsonResponse
 from django.shortcuts import render, get_object_or_404
 from django.template.loader import render_to_string
@@ -29,8 +31,9 @@ def add(request, product_pk):
         user=request.user,
         product_id=product_pk
     )
-    basket_item.qty += 1
+    basket_item.qty = F('qty') + 1
     basket_item.save()
+    print(connection.queries)
     return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
 
 

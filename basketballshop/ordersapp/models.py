@@ -47,11 +47,11 @@ class Order(models.Model):
 
     @property
     def total_quantity(self):
-        return sum(map(lambda x: x.qty, self.order_items))
+        return sum(map(lambda x: x.qty, self.items.all()))
 
     @property
     def total_cost(self):
-        return sum(map(lambda x: x.product_cost, self.order_items))
+        return sum(map(lambda x: x.product_cost, self.items.all()))
 
     @property
     def summary(self):
