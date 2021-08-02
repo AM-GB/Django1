@@ -4,8 +4,9 @@ from django.db import models
 class ProductCategory(models.Model):
     name = models.CharField('имя', max_length=64)
     description = models.TextField('описание', blank=True)
-    short_desc = models.CharField('краткое описание', max_length=200, blank=True)
-    is_active = models.BooleanField('активность', default=True)
+    short_desc = models.CharField(
+        'краткое описание', max_length=200, blank=True)
+    is_active = models.BooleanField('активность', db_index=True, default=True)
 
     def __str__(self):
         return f'{self.name}'
@@ -30,10 +31,15 @@ class Product(models.Model):
     price = models.DecimalField(
         'цена', max_digits=8, decimal_places=2, default=0)
     quantity = models.PositiveIntegerField('количество на складе', default=0)
-    is_active = models.BooleanField('активность', default=True)
-    
+    is_active = models.BooleanField('активность', db_index=True, default=True)
+
     def __str__(self):
         return f'{self.name} ({self.category.name})'
+
+    @classmethod
+    def get_items(cls):
+        return cls.objects.select_related('category'). \
+            filter(is_active=True, category__is_active=True)
 
     class Meta:
         verbose_name = 'продукт'

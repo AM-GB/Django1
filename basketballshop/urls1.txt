@@ -1,0 +1,13 @@
+http://127.0.0.1:8000/auth/login/ POST username=django&password=geekbrains
+http://127.0.0.1:8000/
+http://127.0.0.1:8000/products/
+http://127.0.0.1:8000/contact/
+http://127.0.0.1:8000/category/1/
+http://127.0.0.1:8000/category/2/
+http://127.0.0.1:8000/category/3/
+http://127.0.0.1:8000/category/4/
+http://127.0.0.1:8000/basket/
+http://127.0.0.1:8000/orders/
+http://127.0.0.1:8000/auth/user/edit/
+http://127.0.0.1:8000/orders/update/2/
+http://127.0.0.1:8000/orders/update/5/

@@ -11,4 +11,5 @@ urlpatterns = [
 
     path('category/<int:pk>/', mainapp.category, name='category'),
     path('product/<int:pk>/', mainapp.product_page, name='product_page'),
+    path('product/<int:pk>/price/', mainapp.get_product_price),
 ]

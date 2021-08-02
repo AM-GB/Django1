@@ -17,6 +17,11 @@
             <h4>Корзина пуста</h4>
         {% endif %}
 
+        <a href="{% url 'orders:create' %}"
+        class="btn btn-default btn-round">
+            оформить заказ
+        </a>
+
         <a href="{% url 'base:index' %}" class="btn btn-round">
             на главную
         </a>

@@ -1,0 +1,18 @@
+server {
+    listen 80;
+    server_name 188.227.58.126;
+
+    location = /favicon.ico { access_log off; log_not_found off; }
+    location /static/ {
+        root /home/am/basketballshop;
+    }
+
+    location /media/ {
+        root /home/am/basketballshop;
+    }
+
+    location / {
+        include proxy_params;
+        proxy_pass http://unix:/home/am/basketballshop/basketballshop.sock;
+    }
+}

@@ -1,0 +1,3514 @@
+events: Ticks
+summary: 1160
+fn=<method 'values' of 'mappingproxy' objects>
+0  0
+
+fn=<method 'find' of 'bytearray' objects>
+0  0
+
+fn=<method 'translate' of 'bytearray' objects>
+0  0
+
+fn=<method 'encode' of 'str' objects>
+0  0
+
+fn=<method 'replace' of 'str' objects>
+0  0
+
+fn=<method 'split' of 'str' objects>
+0  0
+
+fn=<method 'rsplit' of 'str' objects>
+0  0
+
+fn=<method 'join' of 'str' objects>
+0  0
+
+fn=<method 'title' of 'str' objects>
+0  0
+
+fn=<method 'find' of 'str' objects>
+0  0
+
+fn=<method 'lower' of 'str' objects>
+0  0
+
+fn=<method 'lstrip' of 'str' objects>
+0  0
+
+fn=<method 'rstrip' of 'str' objects>
+0  0
+
+fn=<method 'rpartition' of 'str' objects>
+0  0
+
+fn=<method 'strip' of 'str' objects>
+0  0
+
+fn=<method 'upper' of 'str' objects>
+0  0
+
+fn=<method 'startswith' of 'str' objects>
+0  0
+
+fn=<method 'endswith' of 'str' objects>
+0  0
+
+fn=<method 'isidentifier' of 'str' objects>
+0  0
+
+fn=<method 'format' of 'str' objects>
+0  0
+
+fn=<built-in method from_bytes>
+0  0
+
+fn=<method 'append' of 'list' objects>
+0  0
+
+fn=<method 'insert' of 'list' objects>
+0  0
+
+fn=<method 'extend' of 'list' objects>
+0  0
+cfl=<frozen importlib._bootstrap_external>
+cfn=<genexpr>
+calls=8 1400
+0 0
+
+fn=<method 'pop' of 'list' objects>
+0  0
+
+fn=<method 'decode' of 'bytes' objects>
+0  0
+
+fn=<method 'rstrip' of 'bytes' objects>
+0  0
+
+fn=<method 'values' of 'collections.OrderedDict' objects>
+0  0
+
+fn=<method 'get' of 'dict' objects>
+0  0
+
+fn=<method 'setdefault' of 'dict' objects>
+0  0
+
+fn=<method 'pop' of 'dict' objects>
+0  0
+
+fn=<method 'items' of 'dict' objects>
+0  0
+
+fn=<method 'update' of 'dict' objects>
+0  0
+
+fn=<built-in method fromkeys>
+0  0
+
+fn=<method 'clear' of 'dict' objects>
+0  0
+
+fn=<method 'copy' of 'dict' objects>
+0  0
+
+fn=<built-in method builtins.__build_class__>
+0  0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/messages/storage/cookie.py
+cfn=MessageEncoder
+calls=1 10
+0 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/messages/storage/cookie.py
+cfn=MessageDecoder
+calls=1 27
+0 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/messages/storage/cookie.py
+cfn=CookieStorage
+calls=1 52
+0 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/messages/storage/session.py
+cfn=SessionStorage
+calls=1 10
+0 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/sessions/serializers.py
+cfn=PickleSerializer
+calls=1 6
+0 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/messages/storage/fallback.py
+cfn=FallbackStorage
+calls=1 6
+0 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/messages/storage/base.py
+cfn=Message
+calls=1 7
+0 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/messages/storage/base.py
+cfn=BaseStorage
+calls=1 43
+0 0
+
+fn=<built-in method builtins.__import__>
+0  0
+cfl=<frozen importlib._bootstrap>
+cfn=_find_and_load
+calls=1 986
+0 0
+
+fn=<built-in method builtins.any>
+0  0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/utils/inspect.py
+cfn=<genexpr>
+calls=3 37
+0 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py
+cfn=<genexpr>
+calls=3 109
+0 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/http/request.py
+cfn=<genexpr>
+calls=1 602
+0 0
+
+fn=<built-in method builtins.callable>
+0  0
+
+fn=<built-in method builtins.exec>
+0  0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/messages/storage/cookie.py
+cfn=<module>
+calls=1 1
+0 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/messages/storage/session.py
+cfn=<module>
+calls=1 1
+0 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/messages/storage/fallback.py
+cfn=<module>
+calls=1 1
+0 3
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/sessions/serializers.py
+cfn=<module>
+calls=1 1
+0 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/messages/storage/base.py
+cfn=<module>
+calls=1 1
+0 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/messages/utils.py
+cfn=<module>
+calls=1 1
+0 0
+
+fn=<built-in method builtins.getattr>
+0  0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/conf/__init__.py
+cfn=__getattr__
+calls=1 76
+0 0
+
+fn=<built-in method builtins.hasattr>
+0  0
+
+fn=<built-in method builtins.id>
+0  0
+
+fn=<built-in method builtins.isinstance>
+0  0
+
+fn=<built-in method builtins.iter>
+0  0
+
+fn=<built-in method builtins.len>
+0  0
+cfl=/usr/lib/python3.8/sre_parse.py
+cfn=__len__
+calls=1 160
+0 0
+
+fn=<built-in method builtins.min>
+0  0
+
+fn=<built-in method builtins.next>
+0  0
+
+fn=<built-in method builtins.ord>
+0  0
+
+fn=<built-in method builtins.setattr>
+0  0
+
+fn=<built-in method builtins.sorted>
+0  0
+
+fn=<built-in method time.time>
+0  0
+
+fn=<method 'read' of '_io.BufferedReader' objects>
+0  0
+
+fn=<built-in method posix.stat>
+0  0
+
+fn=<built-in method posix.listdir>
+0  0
+
+fn=<built-in method posix.fspath>
+0  0
+
+fn=<built-in method _thread.allocate_lock>
+0  0
+
+fn=<built-in method _thread.get_ident>
+0  0
+
+fn=<built-in method _sre.compile>
+0  0
+
+fn=<method 'match' of 're.Pattern' objects>
+0  0
+
+fn=<method 'search' of 're.Pattern' objects>
+0  0
+
+fn=<method 'end' of 're.Match' objects>
+0  0
+
+fn=<method 'groups' of 're.Match' objects>
+0  0
+
+fn=<method 'groupdict' of 're.Match' objects>
+0  0
+
+fn=<built-in method io.open_code>
+0  0
+
+fn=<method 'clear' of 'collections.deque' objects>
+0  0
+
+fn=<built-in method sys.getrecursionlimit>
+0  0
+
+fn=<built-in method marshal.loads>
+0  0
+
+fn=<built-in method _imp.acquire_lock>
+0  0
+
+fn=<built-in method _imp.release_lock>
+0  0
+
+fn=<built-in method _imp.is_builtin>
+0  0
+
+fn=<built-in method _imp.is_frozen>
+0  0
+
+fn=<built-in method _imp._fix_co_filename>
+0  0
+
+fn=<built-in method __new__ of type object at 0x907780>
+0  0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/messages/storage/base.py
+fn=BaseStorage
+43 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/messages/storage/base.py
+fn=<module>
+1 0
+cfn=<built-in method builtins.__build_class__>
+calls=2 0
+1 0
+cfl=<frozen importlib._bootstrap>
+cfn=_handle_fromlist
+calls=2 1017
+1 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/messages/utils.py
+cfn=get_level_tags
+calls=1 5
+1 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/messages/utils.py
+fn=get_level_tags
+5 0
+cfn=<built-in method builtins.getattr>
+calls=1 0
+5 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/messages/utils.py
+fn=<module>
+1 0
+cfl=<frozen importlib._bootstrap>
+cfn=_handle_fromlist
+calls=2 1017
+1 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/messages/storage/cookie.py
+fn=MessageEncoder
+10 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/messages/storage/cookie.py
+fn=MessageDecoder
+27 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/messages/storage/fallback.py
+fn=FallbackStorage
+6 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/messages/storage/fallback.py
+fn=<module>
+1 0
+cfn=<built-in method builtins.__build_class__>
+calls=1 0
+1 0
+cfl=<frozen importlib._bootstrap>
+cfn=_find_and_load
+calls=3 986
+1 3
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/messages/storage/base.py
+fn=Message
+7 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/messages/storage/base.py
+fn=__init__
+51 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/messages/storage/cookie.py
+fn=CookieStorage
+52 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/messages/storage/cookie.py
+fn=<module>
+1 0
+cfn=<built-in method builtins.__build_class__>
+calls=3 0
+1 0
+cfl=<frozen importlib._bootstrap>
+cfn=_handle_fromlist
+calls=2 1017
+1 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/messages/storage/session.py
+fn=__init__
+16 0
+cfn=<built-in method builtins.hasattr>
+calls=1 0
+16 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/messages/storage/base.py
+cfn=__init__
+calls=1 51
+16 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/messages/storage/session.py
+fn=SessionStorage
+10 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/messages/storage/session.py
+fn=<module>
+1 0
+cfn=<built-in method builtins.__build_class__>
+calls=1 0
+1 0
+cfl=<frozen importlib._bootstrap>
+cfn=_handle_fromlist
+calls=1 1017
+1 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/sessions/serializers.py
+fn=PickleSerializer
+6 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/sessions/serializers.py
+fn=<module>
+1 0
+cfn=<built-in method builtins.__build_class__>
+calls=1 0
+1 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/messages/storage/fallback.py
+fn=<listcomp>
+15 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/messages/storage/base.py
+cfn=__init__
+calls=1 51
+15 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/messages/storage/session.py
+cfn=__init__
+calls=1 16
+15 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/messages/storage/fallback.py
+fn=__init__
+13 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/messages/storage/base.py
+cfn=__init__
+calls=1 51
+13 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/messages/storage/fallback.py
+cfn=<listcomp>
+calls=1 15
+13 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/sessions/backends/db.py
+fn=__init__
+16 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/sessions/backends/base.py
+cfn=__init__
+calls=1 44
+16 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/template_profiler_panel/panels/template.py
+fn=__init__
+23 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/template_profiler_panel/panels/template.py
+cfn=monkey_patch_template_classes
+calls=1 37
+23 1
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py
+cfn=connect
+calls=1 49
+23 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/__init__.py
+cfn=__init__
+calls=1 12
+23 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/template_profiler_panel/panels/template.py
+fn=monkey_patch_template_classes
+37 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/wrapt/decorators.py
+cfn=decorator
+calls=1 176
+37 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/wrapt/decorators.py
+cfn=_wrapper
+calls=1 227
+37 0
+cfl=<frozen importlib._bootstrap>
+cfn=_find_and_load
+calls=1 986
+37 0
+cfl=<frozen importlib._bootstrap>
+cfn=_handle_fromlist
+calls=1 1017
+37 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/template_profiler_panel/panels/template.py
+fn=enable_instrumentation
+125 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/sessions/backends/base.py
+fn=_set_session_key
+170 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/sessions/backends/base.py
+cfn=_validate_session_key
+calls=1 160
+170 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/sessions/backends/base.py
+fn=_validate_session_key
+160 0
+cfn=<built-in method builtins.len>
+calls=1 0
+160 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/sessions/backends/base.py
+fn=__init__
+44 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/conf/__init__.py
+cfn=__getattr__
+calls=1 76
+44 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/sessions/backends/base.py
+cfn=_set_session_key
+calls=1 170
+44 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/utils/module_loading.py
+cfn=import_string
+calls=1 7
+44 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/middleware/common.py
+fn=should_redirect_with_slash
+62 0
+cfn=<method 'endswith' of 'str' objects>
+calls=1 0
+62 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/sessions/middleware.py
+fn=process_request
+18 0
+cfn=<method 'get' of 'dict' objects>
+calls=1 0
+18 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/conf/__init__.py
+cfn=__getattr__
+calls=1 76
+18 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/utils/functional.py
+cfn=__get__
+calls=1 72
+18 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/sessions/backends/db.py
+cfn=__init__
+calls=1 16
+18 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/wrapt/decorators.py
+fn=__init__
+80 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/wrapt/decorators.py
+fn=__init__
+129 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/wrapt/decorators.py
+cfn=__init__
+calls=1 80
+129 0
+cfn=<method 'pop' of 'dict' objects>
+calls=1 0
+129 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/wrapt/decorators.py
+fn=_build
+202 0
+cfn=<built-in method builtins.callable>
+calls=1 0
+202 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/wrapt/decorators.py
+cfn=__init__
+calls=1 129
+202 0
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+202 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/wrapt/decorators.py
+fn=_wrapper
+227 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/wrapt/decorators.py
+cfn=_build
+calls=1 202
+227 0
+cfl=/usr/lib/python3.8/inspect.py
+cfn=isclass
+calls=2 72
+227 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/wrapt/decorators.py
+fn=decorator
+176 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/wrapt/decorators.py
+cfn=_build
+calls=1 202
+176 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/middleware/common.py
+fn=process_request
+34 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/middleware/common.py
+cfn=should_redirect_with_slash
+calls=1 62
+34 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/http/request.py
+cfn=get_full_path
+calls=2 121
+34 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/conf/__init__.py
+cfn=__getattr__
+calls=2 76
+34 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/http/request.py
+cfn=get_host
+calls=1 93
+34 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/auth/middleware.py
+fn=process_request
+17 0
+cfn=<built-in method builtins.hasattr>
+calls=1 0
+17 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/utils/functional.py
+cfn=__init__
+calls=1 379
+17 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/messages/middleware.py
+fn=process_request
+11 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/messages/storage/__init__.py
+cfn=default_storage
+calls=1 5
+11 4
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/cache.py
+fn=__init__
+159 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py
+cfn=connect
+calls=1 49
+159 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/__init__.py
+cfn=__init__
+calls=1 12
+159 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/cache.py
+fn=enable_instrumentation
+253 0
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+253 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/logging.py
+fn=__init__
+59 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/__init__.py
+cfn=__init__
+calls=1 12
+59 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/logging.py
+fn=process_request
+75 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/__init__.py
+cfn=process_request
+calls=1 180
+75 1147
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/utils.py
+cfn=clear_collection
+calls=1 260
+75 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/profiling.py
+fn=process_request
+154 0
+cfl=/usr/lib/python3.8/cProfile.py
+cfn=runcall
+calls=1 106
+154 1147
+
+fl=/usr/lib/python3.8/cProfile.py
+fn=runcall
+106 0
+cfn=<method 'enable' of '_lsprof.Profiler' objects>
+calls=1 0
+106 1147
+cfn=<built-in method builtins.len>
+calls=1 0
+106 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/staticfiles.py
+fn=__init__
+90 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/__init__.py
+cfn=__init__
+calls=1 12
+90 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/staticfiles.py
+fn=enable_instrumentation
+95 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/utils/functional.py
+cfn=__init__
+calls=1 273
+95 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/staticfiles.py
+fn=process_request
+115 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/__init__.py
+cfn=process_request
+calls=1 180
+115 1147
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/utils.py
+cfn=clear_collection
+calls=1 260
+115 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/templates/panel.py
+fn=enable_instrumentation
+165 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py
+cfn=connect
+calls=1 49
+165 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/templates/panel.py
+fn=__init__
+67 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/__init__.py
+cfn=__init__
+calls=1 12
+67 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/sql/tracking.py
+fn=wrap_cursor
+41 0
+cfn=<built-in method builtins.hasattr>
+calls=1 0
+41 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/middleware.py
+fn=get_show_toolbar
+24 0
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+24 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/middleware.py
+fn=__call__
+44 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/toolbar.py
+cfn=__init__
+calls=1 20
+44 2
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/toolbar.py
+cfn=enabled_panels
+calls=1 47
+44 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/__init__.py
+cfn=enable_instrumentation
+calls=8 124
+44 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/sql/panel.py
+cfn=enable_instrumentation
+calls=1 140
+44 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/templates/panel.py
+cfn=enable_instrumentation
+calls=1 165
+44 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/staticfiles.py
+cfn=enable_instrumentation
+calls=1 95
+44 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/cache.py
+cfn=enable_instrumentation
+calls=1 253
+44 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/template_profiler_panel/panels/template.py
+cfn=enable_instrumentation
+calls=1 125
+44 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/__init__.py
+cfn=process_request
+calls=1 180
+44 1148
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/middleware.py
+cfn=get_show_toolbar
+calls=1 24
+44 0
+cfl=/home/anatol/djangoHW/Django1/basketballshop/basketballshop/settings.py
+cfn=<lambda>
+calls=1 71
+44 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/toolbar.py
+cfn=is_toolbar_request
+calls=1 137
+44 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/toolbar.py
+fn=__init__
+20 0
+cfn=<method 'copy' of 'dict' objects>
+calls=1 0
+20 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/toolbar.py
+cfn=get_panel_classes
+calls=1 109
+20 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/template_profiler_panel/panels/template.py
+cfn=__init__
+calls=1 23
+20 1
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/__init__.py
+cfn=__init__
+calls=8 12
+20 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/__init__.py
+cfn=enabled
+calls=14 22
+20 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/__init__.py
+cfn=panel_id
+calls=14 18
+20 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/logging.py
+cfn=__init__
+calls=1 59
+20 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/cache.py
+cfn=__init__
+calls=1 159
+20 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/staticfiles.py
+cfn=__init__
+calls=1 90
+20 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/templates/panel.py
+cfn=__init__
+calls=1 67
+20 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/sql/panel.py
+cfn=__init__
+calls=1 57
+20 0
+cfn=<method 'pop' of 'list' objects>
+calls=14 0
+20 0
+cfn=<method 'append' of 'list' objects>
+calls=14 0
+20 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/toolbar.py
+fn=<listcomp>
+52 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/__init__.py
+cfn=enabled
+calls=14 22
+52 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/toolbar.py
+fn=enabled_panels
+47 0
+cfn=<method 'values' of 'collections.OrderedDict' objects>
+calls=1 0
+47 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/toolbar.py
+cfn=<listcomp>
+calls=1 52
+47 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/toolbar.py
+fn=get_panel_classes
+109 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/toolbar.py
+fn=is_toolbar_request
+137 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/base.py
+cfn=resolve
+calls=1 21
+137 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/middleware/security.py
+fn=process_request
+20 0
+cfn=<method 'lstrip' of 'str' objects>
+calls=1 0
+20 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/__init__.py
+fn=__init__
+12 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/__init__.py
+fn=panel_id
+18 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/__init__.py
+fn=enabled
+22 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/utils.py
+cfn=get_name_from_obj
+calls=28 145
+22 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/__init__.py
+cfn=panel_id
+calls=28 18
+22 0
+cfn=<method 'get' of 'dict' objects>
+calls=28 0
+22 0
+cfn=<method 'replace' of 'str' objects>
+calls=24 0
+22 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/__init__.py
+fn=enable_instrumentation
+124 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/__init__.py
+fn=record_stats
+149 0
+cfn=<method 'update' of 'dict' objects>
+calls=1 0
+149 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/__init__.py
+cfn=panel_id
+calls=1 18
+149 0
+cfn=<method 'setdefault' of 'dict' objects>
+calls=1 0
+149 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/__init__.py
+fn=process_request
+180 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/__init__.py
+cfn=process_request
+calls=6 180
+180 1148
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/timer.py
+cfn=process_request
+calls=1 61
+180 1148
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/headers.py
+cfn=process_request
+calls=1 37
+180 1148
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/staticfiles.py
+cfn=process_request
+calls=1 115
+180 1147
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/logging.py
+cfn=process_request
+calls=1 75
+180 1147
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/profiling.py
+cfn=process_request
+calls=1 154
+180 1147
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/utils.py
+fn=get_name_from_obj
+145 0
+cfn=<built-in method builtins.hasattr>
+calls=56 0
+145 0
+cfn=<method 'format' of 'str' objects>
+calls=28 0
+145 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/utils.py
+fn=clear_collection
+260 0
+cfl=/usr/lib/python3.8/threading.py
+cfn=current_thread
+calls=2 1306
+260 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/timer.py
+fn=process_request
+61 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/__init__.py
+cfn=process_request
+calls=1 180
+61 1148
+cfn=<built-in method time.time>
+calls=1 0
+61 0
+cfn=<built-in method resource.getrusage>
+calls=1 0
+61 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/headers.py
+fn=<genexpr>
+44 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/headers.py
+fn=<genexpr>
+39 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/headers.py
+cfn=is_http_header
+calls=88 57
+39 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/headers.py
+cfn=unmangle
+calls=15 63
+39 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/headers.py
+fn=process_request
+37 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/__init__.py
+cfn=process_request
+calls=1 180
+37 1147
+cfn=<built-in method builtins.sorted>
+calls=1 0
+37 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/headers.py
+cfn=<genexpr>
+calls=16 39
+37 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/headers.py
+cfn=<genexpr>
+calls=16 44
+37 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/__init__.py
+cfn=record_stats
+calls=1 149
+37 0
+cfn=<method 'items' of 'dict' objects>
+calls=1 0
+37 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/headers.py
+fn=is_http_header
+57 0
+cfn=<method 'startswith' of 'str' objects>
+calls=88 0
+57 0
+cfn=<built-in method builtins.isinstance>
+calls=88 0
+57 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/headers.py
+fn=unmangle
+63 0
+cfn=<method 'title' of 'str' objects>
+calls=15 0
+63 0
+cfn=<method 'replace' of 'str' objects>
+calls=15 0
+63 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/sql/panel.py
+fn=<dictcomp>
+59 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/db/backends/base/base.py
+cfn=queries
+calls=1 152
+59 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/db/utils.py
+cfn=__getitem__
+calls=1 194
+59 0
+cfn=<built-in method builtins.len>
+calls=1 0
+59 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/sql/panel.py
+fn=__init__
+57 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/__init__.py
+cfn=__init__
+calls=1 12
+57 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/sql/panel.py
+cfn=<dictcomp>
+calls=1 59
+57 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/db/utils.py
+cfn=__iter__
+calls=1 212
+57 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/sql/panel.py
+fn=enable_instrumentation
+140 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/panels/sql/tracking.py
+cfn=wrap_cursor
+calls=1 41
+140 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/db/utils.py
+cfn=all
+calls=1 215
+140 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/core/handlers/wsgi.py
+fn=__init__
+67 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/core/handlers/wsgi.py
+cfn=get_path_info
+calls=1 156
+67 0
+cfn=<method 'get' of 'dict' objects>
+calls=2 0
+67 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/core/handlers/wsgi.py
+cfn=get_script_name
+calls=1 163
+67 0
+cfn=<method 'rstrip' of 'str' objects>
+calls=1 0
+67 0
+cfn=<method 'replace' of 'str' objects>
+calls=1 0
+67 0
+cfn=<method 'upper' of 'str' objects>
+calls=1 0
+67 0
+cfl=/usr/lib/python3.8/cgi.py
+cfn=parse_header
+calls=1 223
+67 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/core/handlers/wsgi.py
+cfn=__init__
+calls=1 19
+67 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/core/handlers/wsgi.py
+fn=COOKIES
+116 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/core/handlers/wsgi.py
+cfn=get_str_from_wsgi
+calls=1 207
+116 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/http/cookie.py
+cfn=parse_cookie
+calls=1 10
+116 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/core/handlers/wsgi.py
+fn=__call__
+137 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/core/handlers/wsgi.py
+cfn=get_script_name
+calls=1 163
+137 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/base.py
+cfn=set_script_prefix
+calls=1 102
+137 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py
+cfn=send
+calls=1 152
+137 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/core/handlers/wsgi.py
+cfn=__init__
+calls=1 67
+137 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/core/handlers/base.py
+cfn=get_response
+calls=1 71
+137 1159
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/core/handlers/wsgi.py
+fn=get_path_info
+156 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/core/handlers/wsgi.py
+cfn=get_bytes_from_wsgi
+calls=2 194
+156 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/utils/encoding.py
+cfn=repercent_broken_unicode
+calls=2 222
+156 0
+cfn=<method 'decode' of 'bytes' objects>
+calls=2 0
+156 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/core/handlers/wsgi.py
+fn=get_script_name
+163 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/core/handlers/wsgi.py
+cfn=get_bytes_from_wsgi
+calls=6 194
+163 0
+cfn=<method 'decode' of 'bytes' objects>
+calls=2 0
+163 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/core/handlers/wsgi.py
+fn=get_bytes_from_wsgi
+194 0
+cfn=<method 'get' of 'dict' objects>
+calls=9 0
+194 0
+cfn=<method 'encode' of 'str' objects>
+calls=9 0
+194 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/core/handlers/wsgi.py
+fn=get_str_from_wsgi
+207 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/core/handlers/wsgi.py
+cfn=get_bytes_from_wsgi
+calls=1 194
+207 0
+cfn=<method 'decode' of 'bytes' objects>
+calls=1 0
+207 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/core/handlers/base.py
+fn=get_response
+71 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/base.py
+cfn=set_urlconf
+calls=1 130
+71 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/core/handlers/exception.py
+cfn=inner
+calls=1 31
+71 1159
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/staticfiles/handlers.py
+fn=_should_handle
+34 0
+cfn=<method 'startswith' of 'str' objects>
+calls=1 0
+34 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/staticfiles/handlers.py
+fn=__call__
+63 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/core/handlers/wsgi.py
+cfn=get_path_info
+calls=1 156
+63 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/staticfiles/handlers.py
+cfn=_should_handle
+calls=1 34
+63 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/core/handlers/wsgi.py
+cfn=__call__
+calls=1 137
+63 1160
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/core/handlers/exception.py
+fn=inner
+31 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/debug_toolbar/middleware.py
+cfn=__call__
+calls=1 44
+31 1152
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/utils/deprecation.py
+cfn=__call__
+calls=8 90
+31 1159
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/core/handlers/wsgi.py
+fn=__init__
+19 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/db/backends/base/introspection.py
+fn=__init__
+14 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/db/backends/base/creation.py
+fn=__init__
+20 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/db/backends/base/features.py
+fn=__init__
+288 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/db/backends/base/operations.py
+fn=__init__
+52 0
+
+fn=<method 'enable' of '_lsprof.Profiler' objects>
+0  1147
+
+fl=/usr/lib/python3/dist-packages/six.py
+fn=find_module
+184 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/middleware/csrf.py
+fn=_sanitize_token
+106 0
+cfl=/usr/lib/python3.8/re.py
+cfn=search
+calls=1 198
+106 0
+cfn=<built-in method builtins.len>
+calls=1 0
+106 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/middleware/csrf.py
+fn=_get_token
+159 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/middleware/csrf.py
+cfn=_sanitize_token
+calls=1 106
+159 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/conf/__init__.py
+cfn=__getattr__
+calls=2 76
+159 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/middleware/csrf.py
+fn=process_request
+200 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/middleware/csrf.py
+cfn=_get_token
+calls=1 159
+200 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/messages/storage/__init__.py
+fn=default_storage
+5 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/conf/__init__.py
+cfn=__getattr__
+calls=1 76
+5 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/messages/storage/fallback.py
+cfn=__init__
+calls=1 13
+5 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/utils/module_loading.py
+cfn=import_string
+calls=1 7
+5 4
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/resolvers.py
+fn=_compile
+179 0
+cfl=/usr/lib/python3.8/re.py
+cfn=compile
+calls=1 250
+179 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/resolvers.py
+fn=match
+247 0
+cfn=<method 'items' of 'dict' objects>
+calls=2 0
+247 0
+cfn=<method 'groupdict' of 're.Match' objects>
+calls=2 0
+247 0
+cfn=<method 'end' of 're.Match' objects>
+calls=2 0
+247 0
+cfn=<method 'search' of 're.Pattern' objects>
+calls=2 0
+247 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/resolvers.py
+fn=__str__
+276 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/resolvers.py
+fn=resolve
+343 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/resolvers.py
+cfn=match
+calls=1 247
+343 0
+cfn=<method 'update' of 'dict' objects>
+calls=1 0
+343 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/resolvers.py
+cfn=__str__
+calls=1 276
+343 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/resolvers.py
+cfn=__init__
+calls=1 31
+343 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/resolvers.py
+fn=__init__
+366 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/resolvers.py
+fn=_join_route
+507 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/resolvers.py
+fn=resolve
+521 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/resolvers.py
+cfn=match
+calls=1 247
+521 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/resolvers.py
+cfn=resolve
+calls=1 343
+521 0
+cfn=<method 'update' of 'dict' objects>
+calls=2 0
+521 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/resolvers.py
+cfn=__str__
+calls=1 276
+521 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/resolvers.py
+cfn=__init__
+calls=2 31
+521 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/resolvers.py
+cfn=_join_route
+calls=2 507
+521 0
+cfn=<built-in method builtins.isinstance>
+calls=2 0
+521 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/resolvers.py
+cfn=resolve
+calls=1 521
+521 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/resolvers.py
+cfn=match
+calls=1 149
+521 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/utils/functional.py
+cfn=__get__
+calls=1 72
+521 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/resolvers.py
+fn=urlconf_module
+561 0
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+561 0
+cfl=/usr/lib/python3.8/importlib/__init__.py
+cfn=import_module
+calls=1 109
+561 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/resolvers.py
+fn=url_patterns
+568 0
+cfn=<built-in method builtins.iter>
+calls=1 0
+568 0
+cfn=<built-in method builtins.getattr>
+calls=1 0
+568 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/utils/functional.py
+cfn=__get__
+calls=1 72
+568 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/resolvers.py
+fn=get_resolver
+65 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/resolvers.py
+cfn=__init__
+calls=1 142
+65 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/resolvers.py
+cfn=__init__
+calls=1 366
+65 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/resolvers.py
+fn=__get__
+87 0
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+87 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/resolvers.py
+cfn=_compile
+calls=1 179
+87 0
+cfn=<built-in method builtins.getattr>
+calls=1 0
+87 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/resolvers.py
+fn=__init__
+142 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/resolvers.py
+fn=match
+149 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/resolvers.py
+cfn=__get__
+calls=1 87
+149 0
+cfn=<method 'groupdict' of 're.Match' objects>
+calls=1 0
+149 0
+cfn=<method 'groups' of 're.Match' objects>
+calls=1 0
+149 0
+cfn=<method 'end' of 're.Match' objects>
+calls=1 0
+149 0
+cfn=<method 'search' of 're.Pattern' objects>
+calls=1 0
+149 0
+
+fn=<built-in method resource.getrusage>
+0  0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/db/backends/base/base.py
+fn=__init__
+47 0
+cfn=<built-in method _thread.allocate_lock>
+calls=1 0
+47 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/db/backends/base/creation.py
+cfn=__init__
+calls=1 20
+47 0
+cfn=<built-in method _thread.get_ident>
+calls=1 0
+47 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/db/backends/base/features.py
+cfn=__init__
+calls=1 288
+47 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/db/backends/base/introspection.py
+cfn=__init__
+calls=1 14
+47 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/db/backends/base/operations.py
+cfn=__init__
+calls=1 52
+47 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/db/backends/base/validation.py
+cfn=__init__
+calls=1 3
+47 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/db/backends/base/client.py
+cfn=__init__
+calls=1 7
+47 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/db/backends/base/base.py
+fn=queries
+152 0
+cfn=<built-in method builtins.len>
+calls=1 0
+152 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/db/backends/base/base.py
+fn=close_if_unusable_or_obsolete
+492 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/db/backends/base/validation.py
+fn=__init__
+3 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/db/backends/base/client.py
+fn=__init__
+7 0
+
+fl=/usr/lib/python3.8/cgi.py
+fn=_parseparam
+211 0
+cfn=<method 'find' of 'str' objects>
+calls=1 0
+211 0
+cfn=<built-in method builtins.len>
+calls=1 0
+211 0
+cfn=<method 'strip' of 'str' objects>
+calls=1 0
+211 0
+
+fl=/usr/lib/python3.8/cgi.py
+fn=parse_header
+223 0
+cfl=/usr/lib/python3.8/cgi.py
+cfn=_parseparam
+calls=2 211
+223 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/http/request.py
+fn=split_domain_port
+565 0
+cfn=<method 'endswith' of 'str' objects>
+calls=1 0
+565 0
+cfn=<method 'lower' of 'str' objects>
+calls=1 0
+565 0
+cfn=<method 'match' of 're.Pattern' objects>
+calls=1 0
+565 0
+cfn=<built-in method builtins.len>
+calls=1 0
+565 0
+cfn=<method 'rsplit' of 'str' objects>
+calls=1 0
+565 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/http/request.py
+fn=<genexpr>
+602 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/http/request.py
+fn=validate_host
+587 0
+cfn=<built-in method builtins.any>
+calls=1 0
+587 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/http/request.py
+cfn=<genexpr>
+calls=1 602
+587 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/resolvers.py
+fn=<listcomp>
+40 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/utils/six.py
+fn=find_module
+182 0
+
+fl=/usr/lib/python3.8/http/cookies.py
+fn=_unquote
+189 0
+cfn=<built-in method builtins.len>
+calls=3 0
+189 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/http/request.py
+fn=_get_raw_host
+74 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/conf/__init__.py
+cfn=__getattr__
+calls=1 76
+74 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/http/request.py
+fn=get_host
+93 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/http/request.py
+cfn=validate_host
+calls=1 587
+93 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/conf/__init__.py
+cfn=__getattr__
+calls=1 76
+93 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/http/request.py
+cfn=_get_raw_host
+calls=1 74
+93 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/http/request.py
+cfn=split_domain_port
+calls=1 565
+93 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/http/request.py
+fn=get_full_path
+121 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/http/request.py
+cfn=_get_full_path
+calls=2 127
+121 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/http/request.py
+fn=_get_full_path
+127 0
+cfn=<method 'get' of 'dict' objects>
+calls=2 0
+127 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/utils/encoding.py
+cfn=escape_uri_path
+calls=2 205
+127 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/base.py
+fn=resolve
+21 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/base.py
+cfn=get_urlconf
+calls=1 142
+21 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/resolvers.py
+cfn=get_resolver
+calls=1 65
+21 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/resolvers.py
+cfn=resolve
+calls=1 521
+21 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/base.py
+fn=set_script_prefix
+102 0
+cfn=<method 'endswith' of 'str' objects>
+calls=1 0
+102 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/base.py
+fn=set_urlconf
+130 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/base.py
+fn=get_urlconf
+142 0
+cfn=<built-in method builtins.getattr>
+calls=1 0
+142 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/resolvers.py
+fn=<listcomp>
+42 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/http/cookie.py
+fn=parse_cookie
+10 0
+cfn=<method 'strip' of 'str' objects>
+calls=6 0
+10 0
+cfn=<method 'split' of 'str' objects>
+calls=4 0
+10 0
+cfl=/usr/lib/python3.8/http/cookies.py
+cfn=_unquote
+calls=3 189
+10 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/utils/encoding.py
+fn=escape_uri_path
+205 0
+cfl=/usr/lib/python3.8/urllib/parse.py
+cfn=quote
+calls=2 787
+205 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/utils/encoding.py
+fn=repercent_broken_unicode
+222 0
+cfn=<method 'decode' of 'bytes' objects>
+calls=2 0
+222 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/resolvers.py
+fn=__init__
+31 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/resolvers.py
+cfn=<listcomp>
+calls=2 40
+31 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/resolvers.py
+cfn=<listcomp>
+calls=2 42
+31 0
+cfn=<built-in method builtins.hasattr>
+calls=3 0
+31 0
+cfn=<method 'join' of 'str' objects>
+calls=9 0
+31 0
+
+fl=/home/anatol/djangoHW/Django1/basketballshop/basketballshop/settings.py
+fn=<lambda>
+71 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py
+fn=<listcomp>
+173 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/db/__init__.py
+cfn=reset_queries
+calls=1 45
+173 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/db/__init__.py
+cfn=close_old_connections
+calls=1 55
+173 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py
+fn=send
+152 0
+cfn=<method 'get' of 'dict' objects>
+calls=1 0
+152 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py
+cfn=_live_receivers
+calls=1 223
+152 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py
+cfn=<listcomp>
+calls=1 173
+152 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py
+fn=_clear_dead_receivers
+214 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py
+fn=_live_receivers
+223 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py
+cfn=_clear_dead_receivers
+calls=1 214
+223 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py
+cfn=_make_id
+calls=1 7
+223 0
+cfn=<method 'append' of 'list' objects>
+calls=4 0
+223 0
+cfn=<built-in method builtins.isinstance>
+calls=2 0
+223 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/utils/inspect.py
+fn=<genexpr>
+37 0
+cfl=/usr/lib/python3.8/inspect.py
+cfn=kind
+calls=17 2539
+37 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/utils/inspect.py
+fn=func_accepts_kwargs
+36 0
+cfl=/usr/lib/python3.8/inspect.py
+cfn=signature
+calls=3 3091
+36 0
+cfl=/usr/lib/python3.8/inspect.py
+cfn=parameters
+calls=3 2845
+36 0
+cfn=<method 'values' of 'mappingproxy' objects>
+calls=3 0
+36 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/utils/inspect.py
+cfn=<genexpr>
+calls=3 37
+36 0
+cfn=<built-in method builtins.any>
+calls=3 0
+36 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/db/__init__.py
+fn=reset_queries
+45 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/db/utils.py
+cfn=all
+calls=1 215
+45 0
+cfn=<method 'clear' of 'collections.deque' objects>
+calls=1 0
+45 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/db/__init__.py
+fn=close_old_connections
+55 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/db/utils.py
+cfn=all
+calls=1 215
+55 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/db/backends/base/base.py
+cfn=close_if_unusable_or_obsolete
+calls=1 492
+55 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/db/utils.py
+fn=load_backend
+100 0
+cfl=/usr/lib/python3.8/importlib/__init__.py
+cfn=import_module
+calls=1 109
+100 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/db/utils.py
+fn=ensure_defaults
+160 0
+cfn=<method 'setdefault' of 'dict' objects>
+calls=11 0
+160 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/db/utils.py
+fn=prepare_test_settings
+181 0
+cfn=<method 'setdefault' of 'dict' objects>
+calls=5 0
+181 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/db/utils.py
+fn=__getitem__
+194 0
+cfn=<built-in method builtins.hasattr>
+calls=4 0
+194 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/db/utils.py
+cfn=ensure_defaults
+calls=1 160
+194 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/db/utils.py
+cfn=prepare_test_settings
+calls=1 181
+194 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/db/utils.py
+cfn=load_backend
+calls=1 100
+194 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/db/backends/base/base.py
+cfn=__init__
+calls=1 47
+194 0
+cfn=<built-in method builtins.setattr>
+calls=1 0
+194 0
+cfn=<built-in method builtins.getattr>
+calls=3 0
+194 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/db/utils.py
+fn=__iter__
+212 0
+cfn=<built-in method builtins.iter>
+calls=4 0
+212 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/db/utils.py
+fn=<listcomp>
+216 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/db/utils.py
+cfn=__getitem__
+calls=3 194
+216 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/db/utils.py
+fn=all
+215 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/db/utils.py
+cfn=__iter__
+calls=3 212
+215 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/db/utils.py
+cfn=<listcomp>
+calls=3 216
+215 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py
+fn=_make_id
+7 0
+cfn=<built-in method builtins.hasattr>
+calls=7 0
+7 0
+cfn=<built-in method builtins.id>
+calls=10 0
+7 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py
+fn=<genexpr>
+109 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py
+fn=connect
+49 0
+cfn=<built-in method builtins.callable>
+calls=3 0
+49 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/conf/__init__.py
+cfn=configured
+calls=3 113
+49 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/utils/inspect.py
+cfn=func_accepts_kwargs
+calls=3 36
+49 1
+cfl=/usr/lib/python3.8/weakref.py
+cfn=__new__
+calls=3 44
+49 0
+cfl=/usr/lib/python3.8/weakref.py
+cfn=__init__
+calls=3 517
+49 0
+cfn=<method 'clear' of 'dict' objects>
+calls=3 0
+49 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py
+cfn=_clear_dead_receivers
+calls=3 214
+49 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/dispatch/dispatcher.py
+cfn=_make_id
+calls=6 7
+49 0
+cfn=<built-in method builtins.hasattr>
+calls=6 0
+49 0
+cfn=<method 'append' of 'list' objects>
+calls=3 0
+49 0
+cfn=<built-in method builtins.any>
+calls=3 0
+49 0
+cfl=<frozen importlib._bootstrap>
+cfn=_handle_fromlist
+calls=3 1017
+49 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/utils/functional.py
+fn=__init__
+273 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/utils/functional.py
+cfn=__setattr__
+calls=2 280
+273 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/utils/functional.py
+fn=__setattr__
+280 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/utils/functional.py
+fn=__init__
+379 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/utils/functional.py
+cfn=__init__
+calls=1 273
+379 0
+
+fl=/usr/lib/python3.8/inspect.py
+fn=_signature_bound_method
+1800 0
+cfl=/usr/lib/python3.8/inspect.py
+cfn=parameters
+calls=3 2845
+1800 0
+cfn=<method 'values' of 'mappingproxy' objects>
+calls=3 0
+1800 0
+cfl=/usr/lib/python3.8/inspect.py
+cfn=kind
+calls=6 2539
+1800 0
+cfl=/usr/lib/python3.8/inspect.py
+cfn=replace
+calls=3 2853
+1800 0
+
+fl=/usr/lib/python3.8/inspect.py
+fn=_signature_from_function
+2112 0
+cfl=/usr/lib/python3.8/inspect.py
+cfn=isfunction
+calls=3 158
+2112 0
+cfl=/usr/lib/python3.8/inspect.py
+cfn=__init__
+calls=20 2477
+2112 0
+cfl=/usr/lib/python3.8/inspect.py
+cfn=__init__
+calls=3 2760
+2112 0
+cfn=<method 'get' of 'dict' objects>
+calls=23 0
+2112 0
+cfn=<method 'append' of 'list' objects>
+calls=20 0
+2112 0
+cfn=<built-in method builtins.getattr>
+calls=3 0
+2112 0
+cfn=<built-in method builtins.len>
+calls=1 0
+2112 0
+
+fl=/usr/lib/python3.8/inspect.py
+fn=_signature_from_callable
+2206 0
+cfn=<built-in method builtins.callable>
+calls=6 0
+2206 0
+cfl=/usr/lib/python3.8/inspect.py
+cfn=_signature_from_callable
+calls=3 2206
+2206 0
+cfl=/usr/lib/python3.8/inspect.py
+cfn=unwrap
+calls=3 493
+2206 0
+cfl=/usr/lib/python3.8/inspect.py
+cfn=isfunction
+calls=3 158
+2206 0
+cfl=/usr/lib/python3.8/inspect.py
+cfn=_signature_from_function
+calls=3 2112
+2206 0
+cfl=/usr/lib/python3.8/inspect.py
+cfn=_signature_bound_method
+calls=3 1800
+2206 0
+cfn=<built-in method builtins.isinstance>
+calls=9 0
+2206 0
+
+fl=/usr/lib/python3.8/inspect.py
+fn=__init__
+2477 0
+cfn=<method 'isidentifier' of 'str' objects>
+calls=20 0
+2477 0
+cfn=<built-in method builtins.isinstance>
+calls=20 0
+2477 0
+cfl=/usr/lib/python3.8/enum.py
+cfn=__call__
+calls=20 283
+2477 0
+
+fl=/usr/lib/python3.8/inspect.py
+fn=name
+2527 0
+
+fl=/usr/lib/python3.8/inspect.py
+fn=default
+2531 0
+
+fl=/usr/lib/python3.8/inspect.py
+fn=kind
+2539 0
+
+fl=/usr/lib/python3.8/inspect.py
+fn=<genexpr>
+2809 0
+cfl=/usr/lib/python3.8/inspect.py
+cfn=name
+calls=20 2527
+2809 0
+
+fl=/usr/lib/python3.8/inspect.py
+fn=__init__
+2760 0
+cfl=/usr/lib/python3.8/inspect.py
+cfn=<genexpr>
+calls=23 2809
+2760 0
+cfl=/usr/lib/python3.8/inspect.py
+cfn=name
+calls=17 2527
+2760 0
+cfl=/usr/lib/python3.8/inspect.py
+cfn=kind
+calls=17 2539
+2760 0
+cfl=/usr/lib/python3.8/inspect.py
+cfn=default
+calls=14 2531
+2760 0
+
+fl=/usr/lib/python3.8/inspect.py
+fn=from_callable
+2839 0
+cfl=/usr/lib/python3.8/inspect.py
+cfn=_signature_from_callable
+calls=3 2206
+2839 0
+
+fl=/usr/lib/python3.8/inspect.py
+fn=parameters
+2845 0
+
+fl=/usr/lib/python3.8/inspect.py
+fn=replace
+2853 0
+cfl=/usr/lib/python3.8/inspect.py
+cfn=__init__
+calls=3 2760
+2853 0
+
+fl=/usr/lib/python3.8/inspect.py
+fn=signature
+3091 0
+cfl=/usr/lib/python3.8/inspect.py
+cfn=from_callable
+calls=3 2839
+3091 0
+
+fl=/usr/lib/python3.8/urllib/parse.py
+fn=quote
+787 0
+cfn=<method 'encode' of 'str' objects>
+calls=2 0
+787 0
+cfn=<built-in method builtins.isinstance>
+calls=2 0
+787 0
+cfl=/usr/lib/python3.8/urllib/parse.py
+cfn=quote_from_bytes
+calls=2 858
+787 0
+
+fl=/usr/lib/python3.8/urllib/parse.py
+fn=quote_from_bytes
+858 0
+cfn=<method 'encode' of 'str' objects>
+calls=2 0
+858 0
+cfn=<method 'decode' of 'bytes' objects>
+calls=2 0
+858 0
+cfn=<built-in method builtins.isinstance>
+calls=4 0
+858 0
+cfn=<method 'rstrip' of 'bytes' objects>
+calls=2 0
+858 0
+
+fl=/usr/lib/python3.8/inspect.py
+fn=isfunction
+158 0
+cfn=<built-in method builtins.isinstance>
+calls=6 0
+158 0
+
+fl=/usr/lib/python3.8/inspect.py
+fn=_is_wrapper
+513 0
+cfn=<built-in method builtins.hasattr>
+calls=3 0
+513 0
+
+fl=/usr/lib/python3.8/inspect.py
+fn=unwrap
+493 0
+cfn=<built-in method sys.getrecursionlimit>
+calls=3 0
+493 0
+cfl=/usr/lib/python3.8/inspect.py
+cfn=_is_wrapper
+calls=3 513
+493 0
+cfn=<built-in method builtins.id>
+calls=3 0
+493 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/conf/__init__.py
+fn=__getattr__
+76 0
+cfn=<built-in method builtins.getattr>
+calls=10 0
+76 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/conf/__init__.py
+fn=configured
+113 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/utils/deprecation.py
+fn=__call__
+90 0
+cfn=<built-in method builtins.hasattr>
+calls=8 0
+90 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/middleware/csrf.py
+cfn=process_request
+calls=1 200
+90 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/core/handlers/exception.py
+cfn=inner
+calls=8 31
+90 1159
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/middleware/security.py
+cfn=process_request
+calls=1 20
+90 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/sessions/middleware.py
+cfn=process_request
+calls=1 18
+90 1
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/auth/middleware.py
+cfn=process_request
+calls=1 17
+90 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/contrib/messages/middleware.py
+cfn=process_request
+calls=1 11
+90 4
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/middleware/common.py
+cfn=process_request
+calls=1 34
+90 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/utils/functional.py
+fn=__get__
+72 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/resolvers.py
+cfn=url_patterns
+calls=1 568
+72 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/urls/resolvers.py
+cfn=urlconf_module
+calls=1 561
+72 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/core/handlers/wsgi.py
+cfn=COOKIES
+calls=1 116
+72 0
+
+fl=/usr/lib/python3.8/inspect.py
+fn=isclass
+72 0
+cfn=<built-in method builtins.isinstance>
+calls=2 0
+72 0
+
+fl=/usr/lib/python3.8/weakref.py
+fn=__new__
+44 0
+cfn=<built-in method __new__ of type object at 0x907780>
+calls=3 0
+44 0
+
+fl=/usr/lib/python3.8/weakref.py
+fn=__init__
+517 0
+cfn=<built-in method builtins.next>
+calls=3 0
+517 0
+cfn=<built-in method builtins.len>
+calls=3 0
+517 0
+
+fl=/home/anatol/.local/lib/python3.8/site-packages/django/utils/module_loading.py
+fn=import_string
+7 0
+cfl=/usr/lib/python3.8/importlib/__init__.py
+cfn=import_module
+calls=2 109
+7 5
+cfn=<built-in method builtins.getattr>
+calls=2 0
+7 0
+cfn=<method 'rsplit' of 'str' objects>
+calls=2 0
+7 0
+
+fl=/usr/lib/python3.8/sre_parse.py
+fn=__init__
+76 0
+
+fl=/usr/lib/python3.8/sre_parse.py
+fn=groups
+81 0
+cfn=<built-in method builtins.len>
+calls=2 0
+81 0
+
+fl=/usr/lib/python3.8/sre_parse.py
+fn=__init__
+111 0
+
+fl=/usr/lib/python3.8/sre_parse.py
+fn=__len__
+160 0
+cfn=<built-in method builtins.len>
+calls=1 0
+160 0
+
+fl=/usr/lib/python3.8/sre_parse.py
+fn=__getitem__
+164 0
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+164 0
+
+fl=/usr/lib/python3.8/sre_parse.py
+fn=append
+172 0
+cfn=<method 'append' of 'list' objects>
+calls=1 0
+172 0
+
+fl=/usr/lib/python3.8/sre_parse.py
+fn=getwidth
+174 0
+cfn=<built-in method builtins.min>
+calls=2 0
+174 0
+
+fl=/usr/lib/python3.8/sre_parse.py
+fn=__init__
+224 0
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+224 0
+cfl=/usr/lib/python3.8/sre_parse.py
+cfn=__next
+calls=1 233
+224 0
+
+fl=/usr/lib/python3.8/sre_parse.py
+fn=__next
+233 0
+
+fl=/usr/lib/python3.8/sre_parse.py
+fn=match
+249 0
+cfl=/usr/lib/python3.8/sre_parse.py
+cfn=__next
+calls=4 233
+249 0
+
+fl=/usr/lib/python3.8/sre_parse.py
+fn=get
+254 0
+cfl=/usr/lib/python3.8/sre_parse.py
+cfn=__next
+calls=8 233
+254 0
+
+fl=/usr/lib/python3.8/sre_parse.py
+fn=tell
+286 0
+cfn=<built-in method builtins.len>
+calls=2 0
+286 0
+
+fl=/usr/lib/python3.8/sre_parse.py
+fn=_uniq
+432 0
+cfn=<built-in method fromkeys>
+calls=1 0
+432 0
+
+fl=/usr/lib/python3.8/sre_parse.py
+fn=_parse_sub
+435 0
+cfn=<method 'append' of 'list' objects>
+calls=1 0
+435 0
+cfl=/usr/lib/python3.8/sre_parse.py
+cfn=tell
+calls=1 286
+435 0
+cfl=/usr/lib/python3.8/sre_parse.py
+cfn=_parse
+calls=1 493
+435 0
+cfl=/usr/lib/python3.8/sre_parse.py
+cfn=match
+calls=1 249
+435 0
+cfn=<built-in method builtins.len>
+calls=1 0
+435 0
+
+fl=/usr/lib/python3.8/sre_parse.py
+fn=_parse
+493 0
+cfn=<method 'append' of 'list' objects>
+calls=3 0
+493 0
+cfl=/usr/lib/python3.8/sre_parse.py
+cfn=tell
+calls=1 286
+493 0
+cfl=/usr/lib/python3.8/sre_parse.py
+cfn=__init__
+calls=1 111
+493 0
+cfl=/usr/lib/python3.8/sre_parse.py
+cfn=get
+calls=8 254
+493 0
+cfl=/usr/lib/python3.8/sre_parse.py
+cfn=match
+calls=4 249
+493 0
+cfn=<built-in method builtins.ord>
+calls=6 0
+493 0
+cfl=/usr/lib/python3.8/sre_parse.py
+cfn=_uniq
+calls=1 432
+493 0
+cfn=<method 'insert' of 'list' objects>
+calls=1 0
+493 0
+cfl=/usr/lib/python3.8/sre_parse.py
+cfn=append
+calls=1 172
+493 0
+cfl=/usr/lib/python3.8/sre_parse.py
+cfn=__getitem__
+calls=1 164
+493 0
+cfn=<built-in method builtins.len>
+calls=2 0
+493 0
+
+fl=/usr/lib/python3.8/sre_parse.py
+fn=fix_flags
+921 0
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+921 0
+
+fl=/usr/lib/python3.8/sre_parse.py
+fn=parse
+937 0
+cfl=/usr/lib/python3.8/sre_parse.py
+cfn=__init__
+calls=1 224
+937 0
+cfl=/usr/lib/python3.8/sre_parse.py
+cfn=__init__
+calls=1 76
+937 0
+cfl=/usr/lib/python3.8/sre_parse.py
+cfn=_parse_sub
+calls=1 435
+937 0
+cfl=/usr/lib/python3.8/sre_parse.py
+cfn=fix_flags
+calls=1 921
+937 0
+
+fl=/usr/lib/python3.8/importlib/__init__.py
+fn=import_module
+109 0
+cfn=<method 'startswith' of 'str' objects>
+calls=4 0
+109 0
+cfl=<frozen importlib._bootstrap>
+cfn=_gcd_import
+calls=4 1002
+109 5
+
+fl=/usr/lib/python3.8/re.py
+fn=search
+198 0
+cfl=/usr/lib/python3.8/re.py
+cfn=_compile
+calls=1 289
+198 0
+cfn=<method 'search' of 're.Pattern' objects>
+calls=1 0
+198 0
+
+fl=/usr/lib/python3.8/re.py
+fn=compile
+250 0
+cfl=/usr/lib/python3.8/re.py
+cfn=_compile
+calls=1 289
+250 0
+
+fl=/usr/lib/python3.8/re.py
+fn=_compile
+289 0
+cfn=<built-in method builtins.isinstance>
+calls=3 0
+289 0
+cfl=/usr/lib/python3.8/sre_compile.py
+cfn=isstring
+calls=1 595
+289 0
+cfl=/usr/lib/python3.8/sre_compile.py
+cfn=compile
+calls=1 759
+289 0
+cfl=/usr/lib/python3.8/enum.py
+cfn=__and__
+calls=1 833
+289 0
+cfn=<built-in method builtins.len>
+calls=1 0
+289 0
+
+fl=/usr/lib/python3.8/sre_compile.py
+fn=_compile
+71 0
+cfn=<method 'append' of 'list' objects>
+calls=2 0
+71 0
+cfl=/usr/lib/python3.8/sre_compile.py
+cfn=_optimize_charset
+calls=1 276
+71 0
+cfl=/usr/lib/python3.8/sre_compile.py
+cfn=_compile_charset
+calls=1 249
+71 0
+cfn=<built-in method builtins.len>
+calls=2 0
+71 0
+
+fl=/usr/lib/python3.8/sre_compile.py
+fn=_compile_charset
+249 0
+cfn=<method 'append' of 'list' objects>
+calls=6 0
+249 0
+cfn=<method 'extend' of 'list' objects>
+calls=2 0
+249 0
+
+fl=/usr/lib/python3.8/sre_compile.py
+fn=_optimize_charset
+276 0
+cfn=<method 'append' of 'list' objects>
+calls=8 0
+276 0
+cfn=<method 'find' of 'bytearray' objects>
+calls=10 0
+276 0
+cfl=/usr/lib/python3.8/sre_compile.py
+cfn=_mk_bitmap
+calls=2 411
+276 0
+cfn=<built-in method builtins.len>
+calls=8 0
+276 0
+
+fl=/usr/lib/python3.8/sre_compile.py
+fn=<listcomp>
+413 0
+
+fl=/usr/lib/python3.8/sre_compile.py
+fn=_mk_bitmap
+411 0
+cfn=<method 'translate' of 'bytearray' objects>
+calls=2 0
+411 0
+cfl=/usr/lib/python3.8/sre_compile.py
+cfn=<listcomp>
+calls=2 413
+411 0
+cfn=<built-in method builtins.len>
+calls=2 0
+411 0
+
+fl=/usr/lib/python3.8/sre_compile.py
+fn=_get_iscased
+453 0
+
+fl=/usr/lib/python3.8/sre_compile.py
+fn=_get_literal_prefix
+461 0
+cfl=/usr/lib/python3.8/sre_compile.py
+cfn=_get_iscased
+calls=1 453
+461 0
+
+fl=/usr/lib/python3.8/sre_compile.py
+fn=_get_charset_prefix
+492 0
+cfl=/usr/lib/python3.8/sre_compile.py
+cfn=_get_iscased
+calls=1 453
+492 0
+
+fl=/usr/lib/python3.8/sre_compile.py
+fn=_compile_info
+536 0
+cfn=<method 'append' of 'list' objects>
+calls=5 0
+536 0
+cfl=/usr/lib/python3.8/sre_parse.py
+cfn=getwidth
+calls=1 174
+536 0
+cfn=<built-in method builtins.min>
+calls=1 0
+536 0
+cfl=/usr/lib/python3.8/sre_compile.py
+cfn=_get_literal_prefix
+calls=1 461
+536 0
+cfl=/usr/lib/python3.8/sre_compile.py
+cfn=_get_charset_prefix
+calls=1 492
+536 0
+cfl=/usr/lib/python3.8/sre_compile.py
+cfn=_optimize_charset
+calls=1 276
+536 0
+cfl=/usr/lib/python3.8/sre_compile.py
+cfn=_compile_charset
+calls=1 249
+536 0
+cfn=<built-in method builtins.len>
+calls=2 0
+536 0
+
+fl=/usr/lib/python3.8/sre_compile.py
+fn=isstring
+595 0
+cfn=<built-in method builtins.isinstance>
+calls=2 0
+595 0
+
+fl=/usr/lib/python3.8/sre_compile.py
+fn=_code
+598 0
+cfn=<method 'append' of 'list' objects>
+calls=1 0
+598 0
+cfl=/usr/lib/python3.8/sre_compile.py
+cfn=_compile_info
+calls=1 536
+598 0
+cfl=/usr/lib/python3.8/sre_compile.py
+cfn=_compile
+calls=1 71
+598 0
+
+fl=/usr/lib/python3.8/sre_compile.py
+fn=compile
+759 0
+cfl=/usr/lib/python3.8/sre_compile.py
+cfn=isstring
+calls=1 595
+759 0
+cfl=/usr/lib/python3.8/sre_parse.py
+cfn=parse
+calls=1 937
+759 0
+cfl=/usr/lib/python3.8/sre_compile.py
+cfn=_code
+calls=1 598
+759 0
+cfl=/usr/lib/python3.8/sre_parse.py
+cfn=groups
+calls=2 81
+759 0
+cfn=<method 'items' of 'dict' objects>
+calls=1 0
+759 0
+cfn=<built-in method _sre.compile>
+calls=1 0
+759 0
+
+fl=/usr/lib/python3.8/enum.py
+fn=__and__
+833 0
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+833 0
+cfl=/usr/lib/python3.8/enum.py
+cfn=__call__
+calls=2 283
+833 0
+
+fl=/usr/lib/python3.8/threading.py
+fn=current_thread
+1306 0
+cfn=<built-in method _thread.get_ident>
+calls=2 0
+1306 0
+
+fl=/usr/lib/python3.8/enum.py
+fn=__new__
+562 0
+
+fl=/usr/lib/python3.8/enum.py
+fn=__call__
+283 0
+cfl=/usr/lib/python3.8/enum.py
+cfn=__new__
+calls=22 562
+283 0
+
+fl=<frozen importlib._bootstrap_external>
+fn=_path_hooks
+1252 0
+cfl=<frozen zipimport>
+cfn=__init__
+calls=1 63
+1252 0
+cfl=<frozen importlib._bootstrap_external>
+cfn=path_hook_for_FileFinder
+calls=1 1520
+1252 0
+
+fl=<frozen importlib._bootstrap_external>
+fn=_path_importer_cache
+1265 0
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_hooks
+calls=1 1252
+1265 0
+
+fl=<frozen importlib._bootstrap_external>
+fn=_get_spec
+1302 0
+cfn=<built-in method builtins.hasattr>
+calls=12 0
+1302 0
+cfn=<built-in method builtins.isinstance>
+calls=13 0
+1302 0
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_importer_cache
+calls=13 1265
+1302 0
+cfl=<frozen importlib._bootstrap_external>
+cfn=find_spec
+calls=12 1431
+1302 1
+cfl=<frozen importlib._bootstrap>
+cfn=__init__
+calls=1 342
+1302 0
+
+fl=<frozen importlib._bootstrap_external>
+fn=find_spec
+1334 0
+cfl=<frozen importlib._bootstrap_external>
+cfn=_get_spec
+calls=7 1302
+1334 1
+
+fl=<frozen importlib._bootstrap_external>
+fn=<genexpr>
+1400 0
+
+fl=<frozen importlib._bootstrap_external>
+fn=__init__
+1394 0
+cfn=<method 'extend' of 'list' objects>
+calls=3 0
+1394 0
+
+fl=<frozen importlib._bootstrap_external>
+fn=_get_spec
+1426 0
+cfl=<frozen importlib._bootstrap_external>
+cfn=__init__
+calls=6 939
+1426 0
+cfl=<frozen importlib._bootstrap_external>
+cfn=spec_from_file_location
+calls=6 629
+1426 0
+
+fl=<frozen importlib._bootstrap_external>
+fn=find_spec
+1431 0
+cfl=<frozen importlib._bootstrap_external>
+cfn=_fill_cache
+calls=1 1479
+1431 0
+cfn=<method 'rpartition' of 'str' objects>
+calls=12 0
+1431 0
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_stat
+calls=12 80
+1431 0
+cfl=<frozen importlib._bootstrap_external>
+cfn=_relax_case
+calls=12 40
+1431 0
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_join
+calls=54 62
+1431 0
+cfl=<frozen importlib._bootstrap>
+cfn=_verbose_message
+calls=54 222
+1431 0
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_isfile
+calls=6 99
+1431 0
+cfl=<frozen importlib._bootstrap_external>
+cfn=_get_spec
+calls=6 1426
+1431 0
+
+fl=<frozen importlib._bootstrap_external>
+fn=_fill_cache
+1479 0
+cfn=<method 'startswith' of 'str' objects>
+calls=2 0
+1479 0
+cfn=<built-in method posix.listdir>
+calls=1 0
+1479 0
+
+fl=<frozen importlib._bootstrap_external>
+fn=path_hook_for_FileFinder
+1520 0
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_isdir
+calls=1 104
+1520 0
+cfl=<frozen importlib._bootstrap_external>
+cfn=__init__
+calls=1 1394
+1520 0
+
+fl=<frozen zipimport>
+fn=__init__
+63 0
+cfn=<built-in method builtins.isinstance>
+calls=1 0
+63 0
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_stat
+calls=1 80
+63 0
+
+fl=<frozen importlib._bootstrap>
+fn=_new_module
+35 0
+
+fl=<frozen importlib._bootstrap>
+fn=__init__
+58 0
+cfn=<built-in method _thread.allocate_lock>
+calls=22 0
+58 0
+
+fl=<frozen importlib._bootstrap>
+fn=acquire
+78 0
+cfn=<built-in method _thread.get_ident>
+calls=11 0
+78 0
+
+fl=<frozen importlib._bootstrap>
+fn=release
+103 0
+cfn=<built-in method _thread.get_ident>
+calls=11 0
+103 0
+
+fl=<frozen importlib._bootstrap_external>
+fn=_relax_case
+40 0
+
+fl=<frozen importlib._bootstrap>
+fn=__init__
+143 0
+
+fl=<frozen importlib._bootstrap>
+fn=__enter__
+147 0
+cfl=<frozen importlib._bootstrap>
+cfn=_get_module_lock
+calls=9 157
+147 0
+cfl=<frozen importlib._bootstrap>
+cfn=acquire
+calls=9 78
+147 0
+
+fl=<frozen importlib._bootstrap>
+fn=__exit__
+151 0
+cfl=<frozen importlib._bootstrap>
+cfn=release
+calls=9 103
+151 0
+
+fl=<frozen importlib._bootstrap>
+fn=cb
+176 0
+cfn=<method 'get' of 'dict' objects>
+calls=11 0
+176 0
+cfn=<built-in method _imp.acquire_lock>
+calls=11 0
+176 0
+cfn=<built-in method _imp.release_lock>
+calls=11 0
+176 0
+
+fl=<frozen importlib._bootstrap>
+fn=_get_module_lock
+157 0
+cfn=<built-in method _imp.acquire_lock>
+calls=11 0
+157 0
+cfl=<frozen importlib._bootstrap>
+cfn=__init__
+calls=11 58
+157 0
+cfn=<built-in method _imp.release_lock>
+calls=11 0
+157 0
+
+fl=<frozen importlib._bootstrap>
+fn=_lock_unlock_module
+194 0
+cfl=<frozen importlib._bootstrap>
+cfn=_get_module_lock
+calls=2 157
+194 0
+cfl=<frozen importlib._bootstrap>
+cfn=acquire
+calls=2 78
+194 0
+cfl=<frozen importlib._bootstrap>
+cfn=release
+calls=2 103
+194 0
+
+fl=<frozen importlib._bootstrap>
+fn=_call_with_frames_removed
+211 0
+cfn=<built-in method builtins.exec>
+calls=6 0
+211 3
+cfn=<built-in method builtins.__import__>
+calls=1 0
+211 0
+
+fl=<frozen importlib._bootstrap>
+fn=_verbose_message
+222 0
+
+fl=<frozen importlib._bootstrap>
+fn=__init__
+342 0
+
+fl=<frozen importlib._bootstrap>
+fn=cached
+376 0
+cfl=<frozen importlib._bootstrap_external>
+cfn=_get_cached
+calls=6 424
+376 0
+
+fl=<frozen importlib._bootstrap>
+fn=parent
+389 0
+cfn=<method 'rpartition' of 'str' objects>
+calls=6 0
+389 0
+
+fl=<frozen importlib._bootstrap>
+fn=has_location
+397 0
+
+fl=<frozen importlib._bootstrap>
+fn=_init_module_attrs
+477 0
+cfn=<built-in method builtins.getattr>
+calls=36 0
+477 0
+cfl=<frozen importlib._bootstrap>
+cfn=parent
+calls=6 389
+477 0
+cfl=<frozen importlib._bootstrap>
+cfn=has_location
+calls=6 397
+477 0
+cfl=<frozen importlib._bootstrap>
+cfn=cached
+calls=12 376
+477 0
+
+fl=<frozen importlib._bootstrap>
+fn=module_from_spec
+549 0
+cfn=<built-in method builtins.hasattr>
+calls=6 0
+549 0
+cfl=<frozen importlib._bootstrap_external>
+cfn=create_module
+calls=6 774
+549 0
+cfl=<frozen importlib._bootstrap>
+cfn=_new_module
+calls=6 35
+549 0
+cfl=<frozen importlib._bootstrap>
+cfn=_init_module_attrs
+calls=6 477
+549 0
+
+fl=<frozen importlib._bootstrap>
+fn=_load_unlocked
+650 0
+cfn=<built-in method builtins.hasattr>
+calls=6 0
+650 0
+cfl=<frozen importlib._bootstrap_external>
+cfn=exec_module
+calls=6 777
+650 3
+cfn=<method 'pop' of 'dict' objects>
+calls=6 0
+650 0
+cfl=<frozen importlib._bootstrap>
+cfn=_verbose_message
+calls=6 222
+650 0
+cfl=<frozen importlib._bootstrap>
+cfn=module_from_spec
+calls=6 549
+650 0
+
+fl=<frozen importlib._bootstrap_external>
+fn=_unpack_uint32
+51 0
+cfn=<built-in method from_bytes>
+calls=18 0
+51 0
+cfn=<built-in method builtins.len>
+calls=18 0
+51 0
+
+fl=<frozen importlib._bootstrap>
+fn=find_spec
+725 0
+cfn=<built-in method _imp.is_builtin>
+calls=1 0
+725 0
+
+fl=<frozen importlib._bootstrap>
+fn=find_spec
+800 0
+cfn=<built-in method _imp.is_frozen>
+calls=7 0
+800 0
+
+fl=<frozen importlib._bootstrap_external>
+fn=<listcomp>
+64 0
+cfn=<method 'rstrip' of 'str' objects>
+calls=144 0
+64 0
+
+fl=<frozen importlib._bootstrap>
+fn=__enter__
+863 0
+cfn=<built-in method _imp.acquire_lock>
+calls=23 0
+863 0
+
+fl=<frozen importlib._bootstrap>
+fn=__exit__
+867 0
+cfn=<built-in method _imp.release_lock>
+calls=23 0
+867 0
+
+fl=<frozen importlib._bootstrap_external>
+fn=_path_join
+62 0
+cfl=<frozen importlib._bootstrap_external>
+cfn=<listcomp>
+calls=66 64
+62 0
+cfn=<method 'join' of 'str' objects>
+calls=66 0
+62 0
+
+fl=<frozen importlib._bootstrap>
+fn=_find_spec_legacy
+881 0
+cfl=/home/anatol/.local/lib/python3.8/site-packages/django/utils/six.py
+cfn=find_module
+calls=1 182
+881 0
+cfl=/usr/lib/python3/dist-packages/six.py
+cfn=find_module
+calls=1 184
+881 0
+
+fl=<frozen importlib._bootstrap>
+fn=_find_spec
+890 0
+cfl=<frozen importlib._bootstrap>
+cfn=_find_spec_legacy
+calls=2 881
+890 0
+cfl=<frozen importlib._bootstrap>
+cfn=__enter__
+calls=23 863
+890 0
+cfl=<frozen importlib._bootstrap>
+cfn=find_spec
+calls=7 725
+890 0
+cfl=<frozen importlib._bootstrap>
+cfn=__exit__
+calls=23 867
+890 0
+cfl=<frozen importlib._bootstrap>
+cfn=find_spec
+calls=7 800
+890 0
+cfl=<frozen importlib._bootstrap_external>
+cfn=find_spec
+calls=7 1334
+890 1
+
+fl=<frozen importlib._bootstrap>
+fn=_sanity_check
+937 0
+cfn=<built-in method builtins.isinstance>
+calls=4 0
+937 0
+
+fl=<frozen importlib._bootstrap>
+fn=_find_and_load_unlocked
+956 0
+cfn=<built-in method builtins.setattr>
+calls=6 0
+956 0
+cfn=<method 'format' of 'str' objects>
+calls=1 0
+956 0
+cfn=<method 'rpartition' of 'str' objects>
+calls=13 0
+956 0
+cfl=<frozen importlib._bootstrap>
+cfn=_find_spec
+calls=7 890
+956 2
+cfl=<frozen importlib._bootstrap>
+cfn=_load_unlocked
+calls=6 650
+956 4
+
+fl=<frozen importlib._bootstrap>
+fn=_find_and_load
+986 0
+cfn=<method 'get' of 'dict' objects>
+calls=9 0
+986 0
+cfl=<frozen importlib._bootstrap>
+cfn=__init__
+calls=9 143
+986 0
+cfl=<frozen importlib._bootstrap>
+cfn=__enter__
+calls=9 147
+986 0
+cfl=<frozen importlib._bootstrap>
+cfn=_lock_unlock_module
+calls=2 194
+986 0
+cfl=<frozen importlib._bootstrap>
+cfn=__exit__
+calls=9 151
+986 0
+cfl=<frozen importlib._bootstrap>
+cfn=cb
+calls=11 176
+986 0
+cfl=<frozen importlib._bootstrap>
+cfn=_find_and_load_unlocked
+calls=7 956
+986 5
+
+fl=<frozen importlib._bootstrap>
+fn=_gcd_import
+1002 0
+cfl=<frozen importlib._bootstrap>
+cfn=_sanity_check
+calls=4 937
+1002 0
+cfl=<frozen importlib._bootstrap>
+cfn=_find_and_load
+calls=4 986
+1002 5
+
+fl=<frozen importlib._bootstrap>
+fn=_handle_fromlist
+1017 0
+cfn=<built-in method builtins.hasattr>
+calls=12 0
+1017 0
+cfn=<built-in method builtins.isinstance>
+calls=12 0
+1017 0
+cfl=<frozen importlib._bootstrap>
+cfn=_call_with_frames_removed
+calls=1 211
+1017 0
+cfn=<method 'format' of 'str' objects>
+calls=1 0
+1017 0
+
+fl=<frozen importlib._bootstrap_external>
+fn=_path_split
+68 0
+cfn=<built-in method builtins.len>
+calls=12 0
+68 0
+cfn=<method 'rpartition' of 'str' objects>
+calls=12 0
+68 0
+
+fl=<frozen importlib._bootstrap_external>
+fn=_path_stat
+80 0
+cfn=<built-in method posix.stat>
+calls=26 0
+80 0
+
+fl=<frozen importlib._bootstrap_external>
+fn=_path_is_mode_type
+90 0
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_stat
+calls=7 80
+90 0
+
+fl=<frozen importlib._bootstrap_external>
+fn=_path_isfile
+99 0
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_is_mode_type
+calls=6 90
+99 0
+
+fl=<frozen importlib._bootstrap_external>
+fn=_path_isdir
+104 0
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_is_mode_type
+calls=1 90
+104 0
+
+fl=<frozen importlib._bootstrap_external>
+fn=cache_from_source
+294 0
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_split
+calls=12 68
+294 0
+cfn=<method 'rpartition' of 'str' objects>
+calls=12 0
+294 0
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_join
+calls=12 62
+294 0
+cfn=<method 'join' of 'str' objects>
+calls=12 0
+294 0
+cfn=<built-in method posix.fspath>
+calls=12 0
+294 0
+
+fl=<frozen importlib._bootstrap_external>
+fn=_get_cached
+424 0
+cfn=<method 'endswith' of 'str' objects>
+calls=6 0
+424 0
+cfl=<frozen importlib._bootstrap_external>
+cfn=cache_from_source
+calls=6 294
+424 0
+
+fl=<frozen importlib._bootstrap_external>
+fn=_check_name_wrapper
+456 0
+cfl=<frozen importlib._bootstrap_external>
+cfn=get_filename
+calls=6 964
+456 0
+
+fl=<frozen importlib._bootstrap_external>
+fn=_classify_pyc
+493 0
+cfl=<frozen importlib._bootstrap_external>
+cfn=_unpack_uint32
+calls=6 51
+493 0
+cfn=<built-in method builtins.len>
+calls=6 0
+493 0
+
+fl=<frozen importlib._bootstrap_external>
+fn=_validate_timestamp_pyc
+526 0
+cfl=<frozen importlib._bootstrap_external>
+cfn=_unpack_uint32
+calls=12 51
+526 0
+
+fl=<frozen importlib._bootstrap_external>
+fn=_compile_bytecode
+578 0
+cfn=<built-in method builtins.isinstance>
+calls=6 0
+578 0
+cfn=<built-in method marshal.loads>
+calls=6 0
+578 0
+cfn=<built-in method _imp._fix_co_filename>
+calls=6 0
+578 0
+cfl=<frozen importlib._bootstrap>
+cfn=_verbose_message
+calls=6 222
+578 0
+
+fl=<frozen importlib._bootstrap_external>
+fn=spec_from_file_location
+629 0
+cfn=<built-in method posix.fspath>
+calls=6 0
+629 0
+cfl=<frozen importlib._bootstrap>
+cfn=__init__
+calls=6 342
+629 0
+
+fl=<frozen importlib._bootstrap_external>
+fn=create_module
+774 0
+
+fl=<frozen importlib._bootstrap_external>
+fn=exec_module
+777 0
+cfl=<frozen importlib._bootstrap_external>
+cfn=get_code
+calls=6 849
+777 1
+cfl=<frozen importlib._bootstrap>
+cfn=_call_with_frames_removed
+calls=6 211
+777 3
+
+fl=<frozen importlib._bootstrap_external>
+fn=get_code
+849 0
+cfl=<frozen importlib._bootstrap_external>
+cfn=cache_from_source
+calls=6 294
+849 0
+cfl=<frozen importlib._bootstrap_external>
+cfn=_check_name_wrapper
+calls=6 456
+849 0
+cfl=<frozen importlib._bootstrap_external>
+cfn=get_data
+calls=6 969
+849 0
+cfl=<frozen importlib._bootstrap_external>
+cfn=path_stats
+calls=6 1010
+849 0
+cfl=<frozen importlib._bootstrap_external>
+cfn=_classify_pyc
+calls=6 493
+849 0
+cfl=<frozen importlib._bootstrap_external>
+cfn=_validate_timestamp_pyc
+calls=6 526
+849 0
+cfl=<frozen importlib._bootstrap_external>
+cfn=_compile_bytecode
+calls=6 578
+849 0
+cfl=<frozen importlib._bootstrap>
+cfn=_verbose_message
+calls=6 222
+849 0
+
+fl=<frozen importlib._bootstrap_external>
+fn=__init__
+939 0
+
+fl=<frozen importlib._bootstrap_external>
+fn=get_filename
+964 0
+
+fl=<frozen importlib._bootstrap_external>
+fn=get_data
+969 0
+cfn=<built-in method builtins.isinstance>
+calls=6 0
+969 0
+cfn=<built-in method io.open_code>
+calls=6 0
+969 0
+cfn=<method 'read' of '_io.BufferedReader' objects>
+calls=6 0
+969 0
+
+fl=<frozen importlib._bootstrap_external>
+fn=path_stats
+1010 0
+cfl=<frozen importlib._bootstrap_external>
+cfn=_path_stat
+calls=6 80
+1010 0
+

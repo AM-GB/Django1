@@ -24,10 +24,16 @@ urlpatterns = [
     path('auth/', include('authapp.urls', namespace='auth')),
     path('basket/', include('basketapp.urls', namespace='basket')),
     path('new/admin/', include('adminapp.urls', namespace='new_admin')),
+    path('orders/', include('ordersapp.urls', namespace='orders')),
+
+    path('social/', include('social_django.urls', namespace='social')),
 
     path('admin/', admin.site.urls),
 ]
 
 if settings.DEBUG:
+    import debug_toolbar
+
     urlpatterns += static(settings.MEDIA_URL,
                           document_root=settings.MEDIA_ROOT)
+    urlpatterns += [path('__debug__/', include(debug_toolbar.urls))]

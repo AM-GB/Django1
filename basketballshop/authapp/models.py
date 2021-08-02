@@ -6,6 +6,7 @@ from django.contrib.auth.models import AbstractUser
 from django.core.mail import send_mail
 from django.db import models
 from django.urls import reverse
+from django.utils.functional import cached_property
 from django.utils.timezone import now
 
 from basketballshop.settings import DOMAIN_NAME, EMAIL_HOST_USER, ACTIVATION_KEY_TTL
@@ -18,11 +19,16 @@ class ShopUser(AbstractUser):
     registration_start_time = models.DateTimeField(
         auto_now_add=True, null=True)
 
+    @cached_property
+    def basket_items(self):
+        # return self.basket.all()
+        return self.basket.select_related('product').all()
+
     def basket_price(self):
-        return sum(el.product_cost for el in self.basket.all())
+        return sum(el.product_cost for el in self.basket_items)
 
     def basket_qty(self):
-        return sum(el.qty for el in self.basket.all())
+        return sum(el.qty for el in self.basket_items)
 
     @property
     def is_activation_key_expired(self):
@@ -45,3 +51,20 @@ class ShopUser(AbstractUser):
 
         return send_mail(subject, message, EMAIL_HOST_USER, [self.email],
                          fail_silently=False)
+
+
+class ShopUserProfile(models.Model):
+    MALE = 'M'
+    FEMALE = 'W'
+
+    GENDER_CHOICES = (
+        (MALE, 'мужской'),
+        (FEMALE, 'женский'),
+    )
+
+    user = models.OneToOneField(
+        ShopUser, primary_key=True, on_delete=models.CASCADE)
+    tagline = models.CharField(verbose_name='теги', max_length=128, blank=True)
+    about_me = models.TextField(verbose_name='о себе', blank=True)
+    gender = models.CharField(verbose_name='пол', max_length=1,
+                              choices=GENDER_CHOICES, blank=True)

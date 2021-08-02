@@ -1,0 +1,12 @@
+[Unit]
+Description=basketballshop daemon
+After=network.target
+
+[Service]
+User=am
+Group=www-data
+WorkingDirectory=/home/am/basketballshop
+ExecStart=/usr/bin/gunicorn3 --access-logfile server.logs --workers 2 --bind unix:/home/am/basketballshop/basketballshop.sock basketballshop.wsgi
+
+[Install]
+WantedBy=multi-user.target
