@@ -125,3 +125,20 @@ def category_product_create(request, category_pk):
 class ProductDetail(SuperUserOnlyMixin, PageTitleMixin, DetailView):
     model = Product
     page_title = 'админка/продукты'
+
+
+class ProductUpdate(SuperUserOnlyMixin, PageTitleMixin, UpdateView):
+    model = Product
+    form_class = AdminProductUpdateForm
+    page_title = 'админка/категории/продукты/редактирование'
+
+    def get_success_url(self):
+        return reverse_lazy('new_admin:category_products', kwargs={'pk': self.object.category_id})
+
+
+class ProductDelete(SuperUserOnlyMixin, PageTitleMixin, DeleteView):
+    model = Product
+    page_title = 'админка/категории/продукты/удаление'
+
+    def get_success_url(self):
+        return reverse_lazy('new_admin:category_products', kwargs={'pk': self.object.category_id})

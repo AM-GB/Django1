@@ -17,7 +17,7 @@
             <b>в каталоге</b>
             <p>{% if object.is_active %}да{% else %}нет{% endif %}</p>
             <p>
-                <a href="{#% url 'myadmin:product_update' object.pk %#}"
+                <a href="{% url 'new_admin:product_update' object.pk %}"
                    class="btn btn-primary">
                     редактировать
                 </a>

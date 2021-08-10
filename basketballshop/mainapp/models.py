@@ -41,6 +41,10 @@ class Product(models.Model):
         return cls.objects.select_related('category'). \
             filter(is_active=True, category__is_active=True)
 
+    def delete(self, using=None, keep_parents=False):
+        self.is_active = False
+        self.save(using=using)
+
     class Meta:
         verbose_name = 'продукт'
         verbose_name_plural = 'продукты'

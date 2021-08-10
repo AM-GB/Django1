@@ -20,10 +20,17 @@ urlpatterns = [
     path('category/delete/<int:pk>/', adminapp.ProductCategoryDelete.as_view(),
          name='category_delete'),
 
-    path('category/<int:pk>/products/', adminapp.category_products, name='category_products'),
+    path('category/<int:pk>/products/',
+         adminapp.category_products, name='category_products'),
     path('category/<int:category_pk>/product/create/', adminapp.category_product_create,
          name='category_product_create'),
 
     path('product/<int:pk>/', adminapp.ProductDetail.as_view(), name='product_view'),
+
+    path('product/update/<int:pk>/', adminapp.ProductUpdate.as_view(),
+         name='product_update'),
+    path('product/delete/<int:pk>/', adminapp.ProductDelete.as_view(),
+         name='product_delete'),
+
 
 ]

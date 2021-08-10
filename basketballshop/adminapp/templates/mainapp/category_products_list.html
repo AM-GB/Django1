@@ -18,10 +18,10 @@
                         <a href={% url 'new_admin:product_view' pk=object.pk %}>подробнее</a>
                     </button>
                     <button>
-                        <a href={#% url 'myadmin:product_update' object.pk %#}>редактировать</a>
+                        <a href={% url 'new_admin:product_update' pk=object.pk %}>редактировать</a>
                     </button>
                     <button>
-                        <a href={#% url 'myadmin:product_delete' object.pk %#}>удалить</a>
+                        <a href={% url 'new_admin:product_delete' pk=object.pk %}>удалить</a>
                     </button>
                 </div>
                 <div class="summary">
